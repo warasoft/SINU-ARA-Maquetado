@@ -12,6 +12,11 @@
     height: 200px;
     background: #aaa;
   }
+      @media screen and (max-width: 768px) {
+  .tablaMobile {
+    font-size: 50%;
+  }
+    }
   </style>
 </head>
 <body>
@@ -49,7 +54,7 @@
   <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%"></div>
 </div>
   <!-- Nav pills -->
-  <ul class="nav nav-tabs nav-justified" role="tablist">
+  <ul class="nav nav-tabs nav-justified tablaMobile" role="tablist">
     <li class="nav-item">
       <a class="nav-link active" data-toggle="pill" href="#home">Registro</a>
     </li>
