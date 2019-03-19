@@ -16,7 +16,7 @@
 </head>
 <body>
 
-<div class="jumbotron text-center" style="margin-bottom:0">
+<div class="text-center" style="margin-bottom:0">
   <h1>S I N U</h1>
   <p>SISTEMA DE INSCRIPCION UNICO</p>
   <P>ARMADA ARGENTINA</P>
@@ -35,10 +35,7 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="ingresar.html">Ingresar</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Acerca de...</a>
-      </li>    
+      </li>  
     </ul>
   </div> 
    </div> 
@@ -58,7 +55,13 @@
                 <br>
                 <input class="form-control" type="text" name="name"  id="name" required="required" placeholder="NOMBRE">
                 <br>
+                <input class="form-control" type="text" name="name"  id="dni" required="required" placeholder="DNI">
+                <br>
                 <input class="form-control" type="email" name="email" id="email" required="required" placeholder="E-M@IL">
+                <br>
+                <div class="form-group">
+                  <input type="password" class="form-control" id="pwd" placeholder="NUEVA CLAVE USUARIO SINU" name="pswd">
+                </div>
                 <br>
                         <input class="form-control" type="text" name="telefono" id="telefono" required="required" placeholder="TELÉFONO"><br>
             </form>
@@ -68,9 +71,10 @@
             </div>
             <select class="custom-select" id="tipo">
               <option selected>Seleccioná...</option>
-              <option value="Ipa argenta">Escuela Naval Militar</option>
-              <option value="Lager">Escuela de Suboficiales</option>
-              <option value="0+">Soldado Tropa</option>
+              <option value="">Escuela de Formación</option>
+              <option value="">Profesionales</option>
+              <option value="">Servicio Militar Voluntario</option>
+              <option value="">Necesito orientación</option>
             </select>
           </div>
                <div class="input-group mb-3">
@@ -92,7 +96,33 @@
       <br>
       <div class="row text-center">
         <div class="col-md-12">
-          <button type="submit" class="btn btn-dark">ENVIAR</button>
+            <button type="button" class="btn btn-secondary bg-dark" data-toggle="modal" data-target="#myModal">
+              Enviar
+            </button>
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">ATENCION</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          La ARMADA ARGENTINA le da la bienvenida al Sistema SINU, verifique su casilla de correo para continuar con el proceso de inscripción.
+          SUMATE A ESTA AVENTURA!!! ARMADA ARGENTINA
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <a class="btn btn-dark" href="index.html">Cerrar</a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
          <!--
          <br><br>
              <div class="text-center">
@@ -109,6 +139,24 @@
 <div class="container-fluid text-center" style="margin-bottom:0">
   <p></p>
 </div>
+
+<script>
+      $(document).ready(function () {
+        /*
+         * Al hacer clic sobre el checkbox verificamos si esta activado o no
+         * y asi alternamos entre el tipo de input donde esta la contrasena
+         * entre text y password
+         */
+        $('#mostrar_contrasena').click(function () {
+          if ($('#mostrar_contrasena').is(':checked')) {
+            $('#contrasena').attr('type', 'text');
+          } else {
+            $('#contrasena').attr('type', 'password');
+          }
+        });
+      });
+    </script>
+
   <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/theme.js"></script>
