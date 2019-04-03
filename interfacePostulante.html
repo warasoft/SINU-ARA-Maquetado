@@ -67,8 +67,9 @@
     </li>
     <li class="nav-item">
       <a class="nav-link" data-toggle="pill" href="#documentacion">Documentación</a>
-    </li><li class="nav-item">
-      <a class="nav-link disabled" data-toggle="pill" href="#menu3">Presentación</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" data-toggle="pill" href="#presentacion">Presentación</a>
     </li>
   </ul>
 
@@ -83,38 +84,50 @@
 	      		<br>
 			      <form>
 			      	<div class="form-group row">
-					    <label for="staticEmail" class="col-sm-2 col-form-label">Apellido</label>
-					    <div class="col-sm-10">
+					    <label for="staticEmail" class="col-sm-4 col-form-label">Apellido</label>
+					    <div class="col-sm-8">
 					      <input class="form-control" readonly type="text" name="apellido"  id="apellido" value="ROMANO">
 					    </div>
 					  </div>
 	                <div class="form-group row">
-					    <label for="staticEmail" class="col-sm-2 col-form-label">Nombre</label>
-					    <div class="col-sm-10">
+					    <label for="staticEmail" class="col-sm-4 col-form-label">Nombre</label>
+					    <div class="col-sm-8">
 	                		<input class="form-control" readonly type="text" name="name"  id="name" value="JONATHAN FERNANDO">
 					    </div>
 					  </div>
-	                <div class="form-group row">
-					    <label for="staticEmail" class="col-sm-2 col-form-label">Teléfono</label>
-					    <div class="col-sm-10">
-	                <input class="form-control"readonly type="telefono" name="telefono" id="telefono" value="1137837319">
+					  <div class="form-group row">
+					    <label for="staticEmail" class="col-sm-4 col-form-label">DNI</label>
+					    <div class="col-sm-8">
+	                <input class="form-control"readonly type="text" name="dni" id="dni" value="38654265">
 					    </div>
 					  </div>
-					  	                <div class="form-group row">
-					    <label for="staticEmail" class="col-sm-2 col-form-label">E-m@il</label>
-					    <div class="col-sm-10">
+					 <div class="form-group row">
+					    <label for="staticEmail" class="col-sm-4 col-form-label">E-m@il</label>
+					    <div class="col-sm-8">
 	                <input class="form-control"readonly type="email" name="email" id="email" value="jromano@ara.mil.ar">
 					    </div>
 					  </div>
+						<div class="form-group row">
+					    <label for="staticEmail" class="col-sm-4 col-form-label">Clave usuario SINU</label>
+					    <div class="col-sm-8">
+	                <input type="password" class="form-control" id="pwd" placeholder="" name="pswd" readonly value="12345678"> 
+					    </div>
+					  </div>	                
 	                <div class="form-group row">
-					    <label for="staticEmail" class="col-sm-2 col-form-label">Ingreso</label>
-					    <div class="col-sm-10">
+					    <label for="staticEmail" class="col-sm-4 col-form-label">Teléfono</label>
+					    <div class="col-sm-8">
+	                <input class="form-control"readonly type="telefono" name="telefono" id="telefono" value="1137837319">
+					    </div>
+					  </div>
+	                <div class="form-group row">
+					    <label for="staticEmail" class="col-sm-4 col-form-label">Ingreso</label>
+					    <div class="col-sm-8">
 					      <input class="form-control" readonly type="text" name="ingresoA"  id="ingresoA" value="ESCUELA DE FORMACIÓN">
 					    </div>
 					  </div>
 	                <div class="form-group row">
-					    <label for="staticEmail" class="col-sm-2 col-form-label">Delegación</label>
-					    <div class="col-sm-10">
+					    <label for="staticEmail" class="col-sm-4 col-form-label">Delegación</label>
+					    <div class="col-sm-8">
 					      <input class="form-control" readonly type="text" name="delegacion"  id="delegacion" value="BUENOS AIRES">
 					    </div>
 					  </div> 
@@ -167,6 +180,9 @@
 				  <li class="nav-item">
 				    <a class="nav-link" data-toggle="pill" href="#domicilio">Actividades</a>
 				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" data-toggle="pill" href="#domicilio">Familiares</a>
+				  </li>
 				</ul>
 	    		</div>
 	    	</div>
@@ -191,30 +207,30 @@
 					                		<input class="form-control" readonly type="text" name="name"  id="name" value="JONATHAN FERNANDO">
 									    </div>
 									  </div>
-					                <div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Teléfono</label>
+									<div class="form-group row">
+									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">DNI</label>
 									    <div class="col-sm-8">
-					                <input class="form-control"readonly type="telefono" name="telefono" id="telefono" value="1137837319">
+					                	<input class="form-control"readonly type="text" name="dni" id="dni" value="38654265">
 									    </div>
-									  </div>
-									  	                <div class="form-group row">
+									</div>  
+					                <div class="form-group row">
 									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">E-m@il</label>
 									    <div class="col-sm-8">
-					                <input class="form-control"readonly type="email" name="email" id="email" value="jromano@ara.mil.ar">
+					                	<input class="form-control"readonly type="email" name="email" id="email" value="jromano@ara.mil.ar">
 									    </div>
-									  </div>
-					                <div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Ingreso</label>
+									</div>
+									<div class="form-group row">
+									    <label for="staticEmail" class="col-sm-4 col-form-label">Clave usuario SINU</label>
 									    <div class="col-sm-8">
-									      <select class="custom-select" id="tipo" disabled>
-							              <option selected>Escuela de Formación</option>
-							              <option value="">Escuela de Formación</option>
-							              <option value="">Profesionales</option>
-							              <option value="">Servicio Militar Voluntario</option>
-							              <option value="">Necesito orientación</option>
-							            </select>
+					               		 <input type="password" class="form-control" id="pwd" placeholder="" name="pswd" readonly value="12345678"> 
 									    </div>
-									  </div>
+									</div> 
+					                <div class="form-group row">
+									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Teléfono</label>
+										<div class="col-sm-8">
+						                <input class="form-control"readonly type="telefono" name="telefono" id="telefono" value="1137837319">
+										</div>
+									</div>
 					                <div class="form-group row">
 									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Delegación</label>
 									    <div class="col-sm-8">
@@ -226,7 +242,67 @@
 							            </select>
 									    </div>
 									  </div>
-									 <div class="form-group row">
+									  <div  style="border:solid 1px #ccc;border-radius:15px;
+									box-shadow: 0px 20px 15px -15px #818181;
+										padding-top: 20px;">
+										
+										<div class="form-group row">
+									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Ingreso</label>
+									    <div class="col-sm-8">
+									      <select class="custom-select" id="tipo" disabled>
+							              <option selected>Escuela de Formación</option>
+							              <option value="">Escuela de Formación</option>
+							              <option value="">Profesionales</option>
+							              <option value="">Servicio Militar Voluntario</option>
+							              <option value="">Necesito orientación</option>
+							            </select>
+									    </div>
+									  </div>
+									  <div class="form-group row">
+									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Preferencia</label>
+									    <div class="col-sm-8">
+									      <select class="custom-select" id="tipo">
+								              <option selected>Seleccioná...</option>
+								              <option value="esnm">Escuela Naval Militar</option>
+								              <option value="essa">Escuela de Suboficiales</option>
+								          </select>
+									    </div>
+					  				</div>
+									</div>
+				              	</form> 	
+					  		</div>
+							<div class="col-md-6">
+								<br>
+								<form>
+									<div class="form-group row">
+									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">CUIL/CUIT</label>
+									    <div class="col-sm-8">
+					                	<input class="form-control" type="text" name="cuil" id="cuil" value="">
+									    </div>
+									</div>
+									<div class="form-group row">
+									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Fecha nacimiento</label>
+									    <div class='col-sm-8'>
+					                    	<input type='date' class="form-control"/>
+					                   	</div>
+									</div>
+									<div class="form-group row">
+									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Edad</label>
+									    <div class="col-sm-8">
+					                	<input class="form-control" type="text" name="edad" id="edad" value="">
+									    </div>
+									</div>
+									<div class="form-group row">
+									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Sexo</label>
+									    <div class="col-sm-8">
+					                		<select class="custom-select" id="tipo">
+								              <option selected>Seleccioná...</option>
+								              <option value="soltero">Masculino</option>
+								              <option value="casado">Femenino</option>
+								          </select>
+									    </div>
+									</div>    
+									<div class="form-group row">
 									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Estado civil</label>
 									    <div class="col-sm-8">
 									      <select class="custom-select" id="tipo">
@@ -239,37 +315,61 @@
 								              <option value="unionConvi">Union convivencial</option>
 								          </select>
 									    </div>
-					  				</div> 
-				              	</form> 	
-					  		</div>
-							<div class="col-md-6">
-								<img src="usuario.jpg" class="rounded mx-auto d-block">
-									  <div class="input-group">
-						        	<div class="input-group-append">
-								    <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">SUBIR</button>
-								  </div>
-								  <div class="custom-file">
-								    <input type="file" class="custom-file-input" id="file-upload" accept="image/*" aria-describedby="inputGroupFileAddon04">
-								    <label class="custom-file-label" for="inputGroupFile04">FOTO</label>
-								  </div>
-								</div>
-							</div> 
+					  				</div>
+					  				<div class="form-group row">
+									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Religión</label>
+									    <div class="col-sm-8">
+					                	<input class="form-control" type="text" name="relig" id="relig" value="">
+									    </div>
+									</div>
+																
+					  				<!--<div class="form-group row">
+									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Fecha casamiento civil</label>
+									    <div class='col-sm-8'>
+					                    	<input type='date' class="form-control"/>
+					                   	</div>
+									</div>-->
+								</form>					
+							</div>
 						</div>
 					</div>
+
 					<div class="tab-pane container fade" id="nacionalidad">
-						<form>
-					        <label>Nacionalidad</label>
-					        <input class="form-control" type="text" name="apellido"  id="apellido" value="ARGENTINA">
-					                <br>
-					                <label>Fecha nacimiento</label>
-					                <input class="form-control" type="text" name="name"  id="name" value="12/06/1986">
-					                <br>
-					                <label>Lugar</label>
-					                <input class="form-control" type="email" name="email" id="email" value="BUENOS AIRES">
-					                <br>
-					                <label>País</label>
-					                <input class="form-control" type="text" name="telefono" id="telefono" value="ARGENTINA"><br>
-			            </form>
+						<br>
+						<div class="row">
+							<div class="col-md-6">
+								<form>
+									<div class="form-group row">
+									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Nacionalidad</label>
+									    <div class="col-sm-8">
+					                	<input class="form-control" type="nac" name="nac" id="cuil" value="">
+									    </div>
+									</div>
+									<div class="form-group row">
+									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Fecha entrada país</label>
+									    <div class='col-sm-8'>
+					                    	<input type='date' class="form-control"/>
+					                   	</div>
+									</div>
+								</form>		
+							</div>
+							<div class="col-md-6">
+								<form>
+									<div class="form-group row">
+									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">País</label>
+									    <div class="col-sm-8">
+					                	<input class="form-control" type="text" name="edad" id="edad" value="">
+									    </div>
+									</div>
+					  				<div class="form-group row">
+									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Provincia</label>
+									    <div class="col-sm-8">
+					                	<input class="form-control" type="text" name="relig" id="relig" value="">
+									    </div>
+									</div>
+								</form>
+							</div>
+						</div>
 					</div>
 					<div class="tab-pane container fade" id="domicilio">
 						<br>
@@ -407,7 +507,9 @@
 		    </div>
 		</div>
 	</div>
-
+<div class="container-fluid text-center" style="margin-bottom:0">
+  <p></p>
+</div>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/theme.js"></script>
@@ -464,3 +566,19 @@
     </script>
 </body>
 </html>
+
+
+
+<!-- foto usuario
+
+	<img src="usuario.jpg" class="rounded mx-auto d-block">
+									  <div class="input-group">
+						        	<div class="input-group-append">
+								    <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">SUBIR</button>
+								  </div>
+								  <div class="custom-file">
+								    <input type="file" class="custom-file-input" id="file-upload" accept="image/*" aria-describedby="inputGroupFileAddon04">
+								    <label class="custom-file-label" for="inputGroupFile04">FOTO</label>
+								  </div>
+								</div>
+-->
