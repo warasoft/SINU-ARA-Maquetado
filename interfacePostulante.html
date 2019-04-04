@@ -56,6 +56,7 @@
 	  <div class="progress">
 	  <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
 	</div>
+
 <!-- Nav pills (INICIO MENU PROCESO)------------------------------------------------------------>
   <ul class="nav nav-tabs nav-justified tablaMobile" role="tablist">
     <li class="nav-item">
@@ -75,6 +76,7 @@
 
 <!-- Tab pane (INICIO PANEL DE PROCESOS)----------------------------------------------------->
 	<div class="tab-content">
+
 		<!--INICIO PROCESO 1 DATOS PERSONALES BASICOS-->
 		    <div id="home" class="container tab-pane active"><br>
 		    	<div class="btn-group" role="group" aria-label="Basic example">
@@ -145,7 +147,7 @@
 	    <!--FIN PROCESO 1 DATOS PERSONALES BASICOS----->
 
 		<!--INICIO PROCESO 2 ENTREVISTA---------------->
-	    <div id="entrevista" class="container tab-pane fade"><br>
+	    	<div id="entrevista" class="container tab-pane fade"><br>
 	      <div class="row">
 	      	<div class="col-md-3">
 	      	</div>
@@ -165,367 +167,453 @@
 		    <div class="col-md-3">
 	      	</div>
 	      </div>
-	    </div>
+	    	</div>
 	    <!--FIN PROCESO 2 ENTREVISTA------------------->
 
 	    <!--INICIO PROCESO 3 DOCUMENTACION------------->
-	    <div id="documentacion" class="container tab-pane fade"><br>
-	    	<h3 class="text-center">Información complementaria</h3>
-	    	<br>
-	    	<!-- Nav pills INICIO SUBMENU DOCUMENTACION-->
-	    	<div class="row">
-	    		<div class="col-md-12">
-					<ul class="nav nav-pills nav-justified tablaMobile text-center">
-					  <li class="nav-item">
-					    <a class="nav-link active" data-toggle="pill" href="#datosPersonales">Datos Personales</a>
-					  </li>
-					  <li class="nav-item">
-					    <a class="nav-link" data-toggle="pill" href="#nacionalidad">Nacionalidad</a>
-					  </li>
-					  <li class="nav-item">
-					    <a class="nav-link" data-toggle="pill" href="#domicilio">Domicilio</a>
-					  </li>
-					  <li class="nav-item">
-					    <a class="nav-link" data-toggle="pill" href="#estudio">Estudio</a>
-					  </li>
-					  <li class="nav-item">
-					    <a class="nav-link" data-toggle="pill" href="#domicilio">Actividades</a>
-					  </li>
-					  <li class="nav-item">
-					    <a class="nav-link" data-toggle="pill" href="#domicilio">Familiares</a>
-					  </li>
-					</ul>
-	    		</div>
-	    	</div>
-	    	<!-- Nav pills FIN SUBMENU DOCUMENTACION----->
+		    <div id="documentacion" class="container tab-pane fade"><br>
+		    	<h3 class="text-center">Información complementaria</h3>
+		    	<br>
 
-	    	<!-- Tab panes INICO SUBPANELES DOCUMENTACION-->
-	    	<div class="row">
-	    		<div class="col-md-12">
-				<div class="tab-content container">
-					<div class="tab-pane container active" id="datosPersonales">
-						<div class="row">
-							<div class="col-md-6">
-								<br>
-								<form>
-							      	<div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Apellido</label>
-									    <div class="col-sm-8">
-									      <input class="form-control" readonly type="text" name="apellido"  id="apellido" value="ROMANO">
-									    </div>
-									  </div>
-					                <div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Nombre</label>
-									    <div class="col-sm-8">
-					                		<input class="form-control" readonly type="text" name="name"  id="name" value="JONATHAN FERNANDO">
-									    </div>
-									  </div>
-									<div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">DNI</label>
-									    <div class="col-sm-8">
-					                	<input class="form-control"readonly type="text" name="dni" id="dni" value="38654265">
-									    </div>
-									</div>  
-					                <div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">E-m@il</label>
-									    <div class="col-sm-8">
-					                	<input class="form-control"readonly type="email" name="email" id="email" value="jromano@ara.mil.ar">
-									    </div>
-									</div>
-									<div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label">Clave usuario SINU</label>
-									    <div class="col-sm-8">
-					               		 <input type="password" class="form-control" id="pwd" placeholder="" name="pswd" readonly value="12345678"> 
-									    </div>
-									</div> 
-					                <div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Teléfono</label>
-										<div class="col-sm-8">
-						                <input class="form-control"readonly type="telefono" name="telefono" id="telefono" value="1137837319">
-										</div>
-									</div>
-					                <div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Delegación</label>
-									    <div class="col-sm-8">
-									      <select class="custom-select" id="tipo" disabled>
-							              <option selected>BUENOS AIRES</option>
-							              <option value="salta">SALTA</option>
-							              <option value="bsas">BUENOS AIRES</option>
-							              <option value="bahia">BAHIA BLANCA</option>
-							            </select>
-									    </div>
-									  </div>
-									  <div  style="border:solid 1px #ccc;border-radius:15px;
-									box-shadow: 0px 20px 15px -15px #818181;
-										padding-top: 20px;">
-										
+		    	<!-- Nav pills INICIO SUBMENU DOCUMENTACION-->
+		    		<div class="row">
+		    		<div class="col-md-12">
+						<ul class="nav nav-pills nav-justified tablaMobile text-center">
+						  <li class="nav-item">
+						    <a class="nav-link active" data-toggle="pill" href="#datosPersonales">Datos Personales</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" data-toggle="pill" href="#nacionalidad">Nacionalidad</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" data-toggle="pill" href="#domicilio">Domicilio</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" data-toggle="pill" href="#estudio">Estudios</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" data-toggle="pill" href="#domicilio">Actividades</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" data-toggle="pill" href="#domicilio">Familiares</a>
+						  </li>
+						</ul>
+		    		</div>
+		    		</div>
+		    	<!-- Nav pills FIN SUBMENU DOCUMENTACION----->
+
+		    	<!-- Tab panes INICO SUBPANELES DOCUMENTACION-->
+		    		<div class="row">
+		    		<div class="col-md-12">
+					<div class="tab-content container">
+						<div class="tab-pane container active" id="datosPersonales">
+							<br>
+							<div class="row">
+								<h4></h4>
+				 	    		<br>
+							</div>
+							<div class="btn-group" role="group" aria-label="Basic example">
+								  <button type="button" class="btn btn-secondary" onclick="quitarReadOnly()">Editar</button>
+								  <button type="button" class="btn btn-secondary" onclick="ponerReadOnly()">Guardar</button>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<br>
+									<form>
+								      	<div class="form-group row">
+										    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Apellido</label>
+										    <div class="col-sm-8">
+										      <input class="form-control" readonly type="text" name="apellido"  id="apellido" value="ROMANO">
+										    </div>
+										  </div>
+						                <div class="form-group row">
+										    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Nombre</label>
+										    <div class="col-sm-8">
+						                		<input class="form-control" readonly type="text" name="name"  id="name" value="JONATHAN FERNANDO">
+										    </div>
+										  </div>
 										<div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Ingreso</label>
-									    <div class="col-sm-8">
-									      <select class="custom-select" id="tipo" disabled>
-							              <option selected>Escuela de Formación</option>
-							              <option value="">Escuela de Formación</option>
-							              <option value="">Profesionales</option>
-							              <option value="">Servicio Militar Voluntario</option>
-							              <option value="">Necesito orientación</option>
-							            </select>
-									    </div>
-									  </div>
-									  <div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Preferencia</label>
-									    <div class="col-sm-8">
-									      <select class="custom-select" id="tipo">
-								              <option selected>Seleccioná...</option>
-								              <option value="esnm">Escuela Naval Militar</option>
-								              <option value="essa">Escuela de Suboficiales</option>
-								          </select>
-									    </div>
-					  				</div>
-									</div>
-				              	</form> 	
-					  		</div>
-							<div class="col-md-6">
-								<br>
-								<form>
-									<div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">CUIL/CUIT</label>
-									    <div class="col-sm-8">
-					                	<input class="form-control" type="text" name="cuil" id="cuil" value="">
-									    </div>
-									</div>
-									<div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Fecha nacimiento</label>
-									    <div class='col-sm-8'>
-					                    	<input type='date' class="form-control"/>
-					                   	</div>
-									</div>
-									<div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Edad</label>
-									    <div class="col-sm-8">
-					                	<input class="form-control" type="text" name="edad" id="edad" value="">
-									    </div>
-									</div>
-									<div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Sexo</label>
-									    <div class="col-sm-8">
-					                		<select class="custom-select" id="tipo">
-								              <option selected>Seleccioná...</option>
-								              <option value="soltero">Masculino</option>
-								              <option value="casado">Femenino</option>
-								          </select>
-									    </div>
-									</div>    
-									<div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Estado civil</label>
-									    <div class="col-sm-8">
-									      <select class="custom-select" id="tipo">
-								              <option selected>Seleccioná...</option>
-								              <option value="soltero">Soltero</option>
-								              <option value="casado">Casado</option>
-								              <option value="viudo">Viudo</option>
-								              <option value="divoriado">Divorciado</option>
-								              <option value="separado">Separado</option>
-								              <option value="unionConvi">Union convivencial</option>
-								          </select>
-									    </div>
-					  				</div>
-					  				<div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Religión</label>
-									    <div class="col-sm-8">
-					                	<input class="form-control" type="text" name="relig" id="relig" value="">
-									    </div>
-									</div>
-																
-					  				<!--<div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Fecha casamiento civil</label>
-									    <div class='col-sm-8'>
-					                    	<input type='date' class="form-control"/>
-					                   	</div>
-									</div>-->
-								</form>					
+										    <label for="staticEmail" class="col-sm-4 col-form-label text-center">DNI</label>
+										    <div class="col-sm-8">
+						                	<input class="form-control"readonly type="text" name="dni" id="dni" value="38654265">
+										    </div>
+										</div>  
+						                <div class="form-group row">
+										    <label for="staticEmail" class="col-sm-4 col-form-label text-center">E-m@il</label>
+										    <div class="col-sm-8">
+						                	<input class="form-control"readonly type="email" name="email" id="email" value="jromano@ara.mil.ar">
+										    </div>
+										</div>
+										<div class="form-group row">
+										    <label for="staticEmail" class="col-sm-4 col-form-label">Clave usuario SINU</label>
+										    <div class="col-sm-8">
+						               		 <input type="password" class="form-control" id="pwd" placeholder="" name="pswd" readonly value="12345678"> 
+										    </div>
+										</div> 
+						                <div class="form-group row">
+										    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Teléfono</label>
+											<div class="col-sm-8">
+							                <input class="form-control"readonly type="telefono" name="telefono" id="telefono" value="1137837319">
+											</div>
+										</div>
+						                <div class="form-group row">
+										    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Delegación</label>
+										    <div class="col-sm-8">
+										      <select class="custom-select" id="tipo" disabled>
+								              <option selected>BUENOS AIRES</option>
+								              <option value="salta">SALTA</option>
+								              <option value="bsas">BUENOS AIRES</option>
+								              <option value="bahia">BAHIA BLANCA</option>
+								            </select>
+										    </div>
+										  </div>
+										  <div  style="border:solid 1px #ccc;border-radius:15px;
+										box-shadow: 0px 20px 15px -15px #818181;
+											padding-top: 20px;">
+											
+											<div class="form-group row">
+										    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Ingreso</label>
+										    <div class="col-sm-8">
+										      <select class="custom-select" id="tipo" disabled>
+								              <option selected>Escuela de Formación</option>
+								              <option value="">Escuela de Formación</option>
+								              <option value="">Profesionales</option>
+								              <option value="">Servicio Militar Voluntario</option>
+								              <option value="">Necesito orientación</option>
+								            </select>
+										    </div>
+										  </div>
+										  <div class="form-group row">
+										    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Preferencia</label>
+										    <div class="col-sm-8">
+										      <select class="custom-select" id="tipo">
+									              <option selected>Seleccioná...</option>
+									              <option value="esnm">Escuela Naval Militar</option>
+									              <option value="essa">Escuela de Suboficiales</option>
+									          </select>
+										    </div>
+						  				</div>
+										</div>
+					              	</form> 	
+						  		</div>
+								<div class="col-md-6">
+									<br>
+									<form>
+										<div class="form-group row">
+										    <label for="staticEmail" class="col-sm-4 col-form-label text-center">CUIL/CUIT</label>
+										    <div class="col-sm-8">
+						                	<input class="form-control" type="text" name="cuil" id="cuil" value="">
+										    </div>
+										</div>
+										<div class="form-group row">
+										    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Fecha nacimiento</label>
+										    <div class='col-sm-8'>
+						                    	<input type='date' class="form-control"/>
+						                   	</div>
+										</div>
+										<div class="form-group row">
+										    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Edad</label>
+										    <div class="col-sm-8">
+						                	<input class="form-control" type="text" name="edad" id="edad" value="">
+										    </div>
+										</div>
+										<div class="form-group row">
+										    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Sexo</label>
+										    <div class="col-sm-8">
+						                		<select class="custom-select" id="tipo">
+									              <option selected>Seleccioná...</option>
+									              <option value="soltero">Masculino</option>
+									              <option value="casado">Femenino</option>
+									          </select>
+										    </div>
+										</div>    
+										<div class="form-group row">
+										    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Estado civil</label>
+										    <div class="col-sm-8">
+										      <select class="custom-select" id="tipo">
+									              <option selected>Seleccioná...</option>
+									              <option value="soltero">Soltero</option>
+									              <option value="casado">Casado</option>
+									              <option value="viudo">Viudo</option>
+									              <option value="divoriado">Divorciado</option>
+									              <option value="separado">Separado</option>
+									              <option value="unionConvi">Union convivencial</option>
+									          </select>
+										    </div>
+						  				</div>
+						  				<div class="form-group row">
+										    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Religión</label>
+										    <div class="col-sm-8">
+						                	<input class="form-control" type="text" name="relig" id="relig" value="">
+										    </div>
+										</div>
+																	
+						  				<!--<div class="form-group row">
+										    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Fecha casamiento civil</label>
+										    <div class='col-sm-8'>
+						                    	<input type='date' class="form-control"/>
+						                   	</div>
+										</div>-->
+									</form>					
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="tab-pane container fade" id="nacionalidad">
-						<br>
-						<div class="row">
-							<div class="col-md-6">
-								<form>
-									<div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Nacionalidad</label>
-									    <div class="col-sm-8">
-					                	<input class="form-control" type="nac" name="nac" id="cuil" value="">
-									    </div>
-									</div>
-									<div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Fecha entrada país</label>
-									    <div class='col-sm-8'>
-					                    	<input type='date' class="form-control"/>
-					                   	</div>
-									</div>
-								</form>		
+						<div class="tab-pane container fade" id="nacionalidad">
+							<br>
+							<div class="row">
+								<h4></h4>
+				 	    		<br>
 							</div>
-							<div class="col-md-6">
-								<form>
-									<div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">País</label>
-									    <div class="col-sm-8">
-					                	<input class="form-control" type="text" name="edad" id="edad" value="">
-									    </div>
-									</div>
-					  				<div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Provincia</label>
-									    <div class="col-sm-8">
-					                	<input class="form-control" type="text" name="relig" id="relig" value="">
-									    </div>
-									</div>
-								</form>
+							<div class="btn-group" role="group" aria-label="Basic example">
+								  <button type="button" class="btn btn-secondary" onclick="quitarReadOnly()">Editar</button>
+								  <button type="button" class="btn btn-secondary" onclick="ponerReadOnly()">Guardar</button>
+							</div>
+							<br>
+							<div class="row">
+								<div class="col-md-6">
+									<br>
+									<form>
+										<div class="form-group row">
+										    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Nacionalidad</label>
+										    <div class="col-sm-8">
+						                	<input class="form-control" type="nac" name="nac" id="cuil" value="">
+										    </div>
+										</div>
+										<div class="form-group row">
+										    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Fecha entrada país</label>
+										    <div class='col-sm-8'>
+						                    	<input type='date' class="form-control"/>
+						                   	</div>
+										</div>
+									</form>		
+								</div>
+								<div class="col-md-6">
+									<form>
+										<div class="form-group row">
+										    <label for="staticEmail" class="col-sm-4 col-form-label text-center">País</label>
+										    <div class="col-sm-8">
+						                	<input class="form-control" type="text" name="edad" id="edad" value="">
+										    </div>
+										</div>
+						  				<div class="form-group row">
+										    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Provincia</label>
+										    <div class="col-sm-8">
+						                	<input class="form-control" type="text" name="relig" id="relig" value="">
+										    </div>
+										</div>
+									</form>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="tab-pane container fade" id="domicilio">
-						<br>
-						<div class="row">
-							<h4>Domicilio real DNI</h4>
-			 	    		<br>
-						</div>
-						<div class="btn-group" role="group" aria-label="Basic example">
-							  <button type="button" class="btn btn-secondary" onclick="quitarReadOnly()">Editar</button>
-							  <button type="button" class="btn btn-secondary" onclick="ponerReadOnly()">Guardar</button>
-						</div>
-			 	    	<div class="row">
-			 	    		<div class="col-md-6">
-			 	    			<br>
-			 	    			<form>
-							      	<div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Calle/Barrio</label>
-									    <div class="col-sm-8">
-									      <input class="form-control" readonly type="text" name="calle"  id="calle" value="Ejercito Argentino, B° Union">
-									    </div>
-									  </div>
-					                <div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">N°</label>
-									    <div class="col-sm-8">
-					                		<input class="form-control" readonly type="text" name="numero"  id="numero" value="10">
-									    </div>
-									  </div>
-					                <div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Piso</label>
-									    <div class="col-sm-8">
-					                	<input class="form-control"readonly type="text" name="piso" id="piso" value="">
-									    </div>
-									  </div>
-									 <div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Unidad</label>
-									    <div class="col-sm-8">
-					                	<input class="form-control"readonly type="text" name="unidad" id="unidad" value="">
-									    </div>
-									  </div>
-				              	</form> 
-			 	    		</div>
-							<div class="col-md-6">
-								<br>
-			 	    			<form>
-			 	    				<div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Código Postal</label>
-									    <div class="col-sm-8">
-									      <input class="form-control" readonly type="text" name="codPostal"  id="codPostal" value="4400">
-									    </div>
-									</div>
-					                <div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Localidad</label>
-									    <div class="col-sm-8">
-									      <input class="form-control" readonly type="text" name="localidad"  id="localidad" value="SALTA">
-									    </div>
-									</div>
-									<div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Provincia</label>
-									    <div class="col-sm-8">
-									      <input class="form-control" readonly type="text" name="provincia"  id="provincia" value="SALTA">
-									    </div>
-									</div>
-				              	</form> 
-			 	    		</div>
-						</div>
-						<br>
-						<div class="row">
-							<h4>Domicilio eventual</h4>
-			 	    		<br>
-						</div>
-						<div class="row">
-			 	    		<div class="col-md-6">
-			 	    			<br>
-			 	    			<form>
-							      	<div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Calle/Barrio</label>
-									    <div class="col-sm-8">
-									      <input class="form-control" readonly type="text" name="calle"  id="calle" value="Av. ACOYTE, Caballito">
-									    </div>
-									  </div>
-					                <div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">N°</label>
-									    <div class="col-sm-8">
-					                		<input class="form-control" readonly type="text" name="numero"  id="numero" value="135">
-									    </div>
-									  </div>
-					                <div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Piso</label>
-									    <div class="col-sm-8">
-					                	<input class="form-control"readonly type="text" name="piso" id="piso" value="4">
-									    </div>
-									  </div>
-									 <div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Unidad</label>
-									    <div class="col-sm-8">
-					                	<input class="form-control"readonly type="text" name="unidad" id="unidad" value="P">
-									    </div>
-									  </div>
-				              	</form> 
-			 	    		</div>
-							<div class="col-md-6">
-								<br>
-			 	    			<form>
-			 	    				<div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Código Postal</label>
-									    <div class="col-sm-8">
-									      <input class="form-control" readonly type="text" name="codPostal"  id="codPostal" value="1405">
-									    </div>
-									</div>
-					                <div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Localidad</label>
-									    <div class="col-sm-8">
-									      <input class="form-control" readonly type="text" name="localidad"  id="localidad" value="Ciudad Autónoma de Buenos Aires">
-									    </div>
-									</div>
-									<div class="form-group row">
-									    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Provincia</label>
-									    <div class="col-sm-8">
-									      <input class="form-control" readonly type="text" name="provincia"  id="provincia" value="Buenos Aires">
-									    </div>
-									</div>
-				              	</form> 
-			 	    		</div>
-						</div>
-					</div>
-					<div class="tab-pane container fade" id="estudio">
-			 	    	<div class="row">
 
-					  </div>
-					</div>
-				</div>
-				</div>    		
-	    	</div>
-	    	<!-- Tab panes FIN SUBPANELES DOCUMENTACION-->
+						<div class="tab-pane container fade" id="domicilio">
+							<br>
+							<div class="row">
+								<h4>Domicilio real DNI</h4>
+				 	    		<br>
+							</div>
+							<div class="btn-group" role="group" aria-label="Basic example">
+								  <button type="button" class="btn btn-secondary" onclick="quitarReadOnly()">Editar</button>
+								  <button type="button" class="btn btn-secondary" onclick="ponerReadOnly()">Guardar</button>
+							</div>
+				 	    	<div class="row">
+				 	    		<div class="col-md-6">
+				 	    			<br>
+				 	    			<form>
+								      	<div class="form-group row">
+										    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Calle/Barrio</label>
+										    <div class="col-sm-8">
+										      <input class="form-control" readonly type="text" name="calle"  id="calle" value="Ejercito Argentino, B° Union">
+										    </div>
+										  </div>
+						                <div class="form-group row">
+										    <label for="staticEmail" class="col-sm-4 col-form-label text-center">N°</label>
+										    <div class="col-sm-8">
+						                		<input class="form-control" readonly type="text" name="numero"  id="numero" value="10">
+										    </div>
+										  </div>
+						                <div class="form-group row">
+										    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Piso</label>
+										    <div class="col-sm-8">
+						                	<input class="form-control"readonly type="text" name="piso" id="piso" value="">
+										    </div>
+										  </div>
+										 <div class="form-group row">
+										    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Unidad</label>
+										    <div class="col-sm-8">
+						                	<input class="form-control"readonly type="text" name="unidad" id="unidad" value="">
+										    </div>
+										  </div>
+					              	</form> 
+				 	    		</div>
+								<div class="col-md-6">
+									<br>
+				 	    			<form>
+				 	    				<div class="form-group row">
+										    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Código Postal</label>
+										    <div class="col-sm-8">
+										      <input class="form-control" readonly type="text" name="codPostal"  id="codPostal" value="4400">
+										    </div>
+										</div>
+						                <div class="form-group row">
+										    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Localidad</label>
+										    <div class="col-sm-8">
+										      <input class="form-control" readonly type="text" name="localidad"  id="localidad" value="SALTA">
+										    </div>
+										</div>
+										<div class="form-group row">
+										    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Provincia</label>
+										    <div class="col-sm-8">
+										      <input class="form-control" readonly type="text" name="provincia"  id="provincia" value="SALTA">
+										    </div>
+										</div>
+					              	</form> 
+				 	    		</div>
+							</div>
+							<br>
+							<div class="row">
+								<h4>Domicilio eventual</h4>
+				 	    		<br>
+							</div>
+							<div class="row">
+				 	    		<div class="col-md-6">
+				 	    			<br>
+				 	    			<form>
+								      	<div class="form-group row">
+										    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Calle/Barrio</label>
+										    <div class="col-sm-8">
+										      <input class="form-control" readonly type="text" name="calle"  id="calle" value="Av. ACOYTE, Caballito">
+										    </div>
+										  </div>
+						                <div class="form-group row">
+										    <label for="staticEmail" class="col-sm-4 col-form-label text-center">N°</label>
+										    <div class="col-sm-8">
+						                		<input class="form-control" readonly type="text" name="numero"  id="numero" value="135">
+										    </div>
+										  </div>
+						                <div class="form-group row">
+										    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Piso</label>
+										    <div class="col-sm-8">
+						                	<input class="form-control"readonly type="text" name="piso" id="piso" value="4">
+										    </div>
+										  </div>
+										 <div class="form-group row">
+										    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Unidad</label>
+										    <div class="col-sm-8">
+						                	<input class="form-control"readonly type="text" name="unidad" id="unidad" value="P">
+										    </div>
+										  </div>
+					              	</form> 
+				 	    		</div>
+								<div class="col-md-6">
+									<br>
+				 	    			<form>
+				 	    				<div class="form-group row">
+										    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Código Postal</label>
+										    <div class="col-sm-8">
+										      <input class="form-control" readonly type="text" name="codPostal"  id="codPostal" value="1405">
+										    </div>
+										</div>
+						                <div class="form-group row">
+										    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Localidad</label>
+										    <div class="col-sm-8">
+										      <input class="form-control" readonly type="text" name="localidad"  id="localidad" value="Ciudad Autónoma de Buenos Aires">
+										    </div>
+										</div>
+										<div class="form-group row">
+										    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Provincia</label>
+										    <div class="col-sm-8">
+										      <input class="form-control" readonly type="text" name="provincia"  id="provincia" value="Buenos Aires">
+										    </div>
+										</div>
+					              	</form> 
+				 	    		</div>
+							</div>
+						</div>
 
-		</div>
+						<div class="tab-pane container fade" id="estudio">
+				 	    	<br>
+				 	    	<div class="row">
+				 	    		<div class="col-md-4">
+										<a class="btn btn-primary" href="javascript:void(0)" id="addInput">
+											<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+											Agregar Estudio
+										</a>
+			 	    			</div>
+				 	    		<div class="col-md-8">
+				 	    			<div id="dynamicDiv" style="border:solid 1px #ccc;border-radius:15px;
+										box-shadow: 0px 20px 15px -15px #818181;
+											padding-top: 20px;">
+										<form>
+											<select class="custom-select" id="tipo">
+								              <option selected>Nivel de estudio</option>
+								              <option value="primario">PRIMARIO</option>
+								              <option value="secundario">SECUNDARIO</option>
+								              <option value="terciario">TERCIARIO</option>
+								              <option value="universitario">UNIVERSITARIO</option>
+								              <option value="otro">OTRO</option>
+								            </select>
+								            <br>
+								            <div class="container" style="padding-top: 10px;">
+								            	<div class="form-check">
+											 	<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+											  	<label class="form-check-label" for="exampleRadios1">
+											    Completo
+											  </label>
+											</div>
+											<div class="form-check">
+											  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+											  <label class="form-check-label" for="exampleRadios2">
+											    En curso
+											  </label>
+											</div>
+											<div class="form-check">
+											  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+											  <label class="form-check-label" for="exampleRadios2">
+											    Incompleto
+											  </label>
+											</div>
+								            </div>
+											<br>
+								            <input class="form-control" type="text" name="" placeholder="Título obtenido">          	
+								            <br>
+								            <input class="form-control" type="text" name="" placeholder="PROMEDIO">
+								            <br>
+								            <input class="form-control" type="text" name="" placeholder="Establecimiento">
+								            <br>
+								            <input class="form-control" type="text" name="" placeholder="Localidad">
+								            <br>
+								            <input class="form-control" type="text" name="" placeholder="Provincia">
+								            <br>
+								            <input class="form-control" type="text" name="" placeholder="País">
+								            <br>
+										</form>
+
+											<!--<p>
+										        <input type="text" id="inputeste" size="20" value="" placeholder="" />
+										        <a class="btn btn-danger" href="javascript:void(0)" id="remInput">
+										        	<span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+										        	Remover Campo
+												</a>
+									        </p>-->
+									</div>
+
+				 	    		</div>
+						  </div>
+						</div>
+					</div>
+					</div>    		
+		    		</div>
+		    	<!-- Tab panes FIN SUBPANELES DOCUMENTACION-->
+			</div>
 		<!--FIN PROCESO 3 DOCUMENTACION---------------->
 	</div>
 <!-- Tab pane (FIN PANEL DE PROCESOS)-------------------------------------------------------->
 
-<div class="container-fluid text-center" style="margin-bottom:0">
-  <p></p>
-</div>
+	<div class="container-fluid text-center" style="margin-bottom:0">
+	  <p></p>
+	</div>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/theme.js"></script>
@@ -580,6 +668,53 @@
 
     }
     </script>
+<script>
+			$(function () {
+			    var scntDiv = $('#dynamicDiv');
+			    $(document).on('click', '#addInput', function () {
+			        $('<div style="border-top: solid 2px;"></div>'+
+			        '<form>'+
+			        '<select class="custom-select" id="tipo">'+
+  	                '<option selected>Nivel de estudio</option>'+
+ 	                '<option value="salta">PRIMARIO</option>'+
+					'<option value="bsas">SECUNDARIO</option>'+
+					'<option value="bahia">TERCIARIO</option>'+
+		            '</select>'+				            
+					'<br>'+
+					'<div class="container" style="padding-top: 10px;">'+
+					'<div class="form-check">'+
+				 	'<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>'+
+					'<label class="form-check-label" for="exampleRadios1">Completo</label>'+
+					'</div>'+
+					'<div class="form-check">'+
+					'<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">'+
+					'<label class="form-check-label" for="exampleRadios2">En curso</label>'+
+					'</div>'+
+					'<div class="form-check">'+
+					'<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">'+
+					'<label class="form-check-label" for="exampleRadios2">Incompleto</label>'+
+					'</div></div><br><input class="form-control" type="text" name="" placeholder="Título obtenido">'+
+		            '<br>'+
+		            '<input class="form-control" type="text" name="" placeholder="PROMEDIO">'+
+		            '<br>'+
+		            '<input class="form-control" type="text" name="" placeholder="Establecimiento">'+
+		            '<br>'+
+		            '<input class="form-control" type="text" name="" placeholder="Localidad">'+
+		            '<br>'+
+		            '<input class="form-control" type="text" name="" placeholder="Provincia">'+
+		           '<br>'+
+		            '<input class="form-control" type="text" name="" placeholder="País">'+
+		           '<br>'+
+		           '</form>').appendTo(scntDiv);
+			        return false;
+			    });
+
+			    $(document).on('click', '#remInput', function () {
+		            $(this).parents('p').remove();
+			        return false;
+			    });
+			});
+			</script>    
 </body>
 </html>
 
