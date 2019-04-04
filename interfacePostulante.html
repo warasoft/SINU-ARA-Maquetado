@@ -229,10 +229,10 @@
 						    <a class="nav-link" data-toggle="pill" href="#estudio">Estudios</a>
 						  </li>
 						  <li class="nav-item">
-						    <a class="nav-link" data-toggle="pill" href="#domicilio">Actividades</a>
+						    <a class="nav-link" data-toggle="pill" href="#actividades">Actividades</a>
 						  </li>
 						  <li class="nav-item">
-						    <a class="nav-link" data-toggle="pill" href="#domicilio">Familiares</a>
+						    <a class="nav-link" data-toggle="pill" href="#familiares">Familiares</a>
 						  </li>
 						</ul>
 		    		</div>
@@ -578,12 +578,12 @@
 								</div>
 
 								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Agregar Estudio</button>
-
+								<br>
 								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 									  <div class="modal-dialog" role="document">
 									    <div class="modal-content">
 									      <div class="modal-header">
-									        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+									        <h5 class="modal-title" id="exampleModalLabel">Agregar</h5>
 									        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 									          <span aria-hidden="true">&times;</span>
 									        </button>
@@ -671,19 +671,351 @@
 										      <th scope="row">2</th>
 										      <td>UNIVERSITARIO</td>
 										      <td>COMPLETO</td>
-										      <td>LIC EN INFORMATICA</td>
+										      <td>LIC EN RRHH</td>
 										      <td>UP</td>
 										      <td>CABA</td>
 										      <td>ARGENTINA</td>
 										    </tr>
 										    <tr>
-										      <th scope="row">2</th>
-										      <td>UNIVERSITARIO</td>
+										      <th scope="row">3</th>
+										      <td>POSGRADO</td>
 										      <td>COMPLETO</td>
-										      <td>LIC EN INFORMATICA</td>
-										      <td>UP</td>
+										      <td>ESP. EN ADMINISTRACION</td>
+										      <td>UCES</td>
 										      <td>CABA</td>
 										      <td>ARGENTINA</td>
+										    </tr>
+										  </tbody>
+											</table>
+										</div>
+								</div>
+
+											<!--<form>
+												<select class="custom-select" id="tipo">
+									              <option selected>Nivel de estudio</option>
+									              <option value="primario">PRIMARIO</option>
+									              <option value="secundario">SECUNDARIO</option>
+									              <option value="terciario">TERCIARIO</option>
+									              <option value="universitario">UNIVERSITARIO</option>
+									              <option value="otro">OTRO</option>
+									            </select>
+									            <br>
+									            <div class="container" style="padding-top: 10px;">
+									            	<div class="form-check">
+												 	<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+												  	<label class="form-check-label" for="exampleRadios1">
+												    Completo
+												  </label>
+												</div>
+												<div class="form-check">
+												  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+												  <label class="form-check-label" for="exampleRadios2">
+												    En curso
+												  </label>
+												</div>
+												<div class="form-check">
+												  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+												  <label class="form-check-label" for="exampleRadios2">
+												    Incompleto
+												  </label>
+												</div>
+									            </div>
+												<br>
+									            <input class="form-control" type="text" name="" placeholder="Título obtenido">          	
+									            <br>
+									            <input class="form-control" type="text" name="" placeholder="PROMEDIO">
+									            <br>
+									            <input class="form-control" type="text" name="" placeholder="Establecimiento">
+									            <br>
+									            <input class="form-control" type="text" name="" placeholder="Localidad">
+									            <br>
+									            <input class="form-control" type="text" name="" placeholder="Provincia">
+									            <br>
+									            <input class="form-control" type="text" name="" placeholder="País">
+									            <br>
+											</form>-->
+
+												<!--<p>
+											        <input type="text" id="inputeste" size="20" value="" placeholder="" />
+											        <a class="btn btn-danger" href="javascript:void(0)" id="remInput">
+											        	<span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+											        	Remover Campo
+													</a>
+										        </p>-->
+							</div>
+
+							<div class="tab-pane container fade" id="actividades">
+					 	    	<br>
+					 			<br>
+								<div class="row">
+									<h4>Actividades en FFAA o FFSS</h4>
+					 	    		<br>
+								</div>
+
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Agregar actividad</button>
+								<br>
+								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									  <div class="modal-dialog" role="document">
+									    <div class="modal-content">
+									      <div class="modal-header">
+									        <h5 class="modal-title" id="exampleModalLabel">Actividad</h5>
+									        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									          <span aria-hidden="true">&times;</span>
+									        </button>
+									      </div>
+									      <div class="modal-body">
+									        <form>
+												<select class="custom-select" id="tipo">
+									              <option selected>Nivel de estudio</option>
+									              <option value="primario">PRIMARIO</option>
+									              <option value="secundario">SECUNDARIO</option>
+									              <option value="terciario">TERCIARIO</option>
+									              <option value="universitario">UNIVERSITARIO</option>
+									              <option value="otro">OTRO</option>
+									            </select>
+									            <br>
+									            <div class="container" style="padding-top: 10px;">
+									            	<div class="form-check">
+												 	<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+												  	<label class="form-check-label" for="exampleRadios1">
+												    Completo
+												  </label>
+												</div>
+												<div class="form-check">
+												  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+												  <label class="form-check-label" for="exampleRadios2">
+												    En curso
+												  </label>
+												</div>
+												<div class="form-check">
+												  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+												  <label class="form-check-label" for="exampleRadios2">
+												    Incompleto
+												  </label>
+												</div>
+									            </div>
+												<br>
+									            <input class="form-control" type="text" name="" placeholder="Título obtenido">          	
+									            <br>
+									            <input class="form-control" type="text" name="" placeholder="PROMEDIO">
+									            <br>
+									            <input class="form-control" type="text" name="" placeholder="Establecimiento">
+									            <br>
+									            <input class="form-control" type="text" name="" placeholder="Localidad">
+									            <br>
+									            <input class="form-control" type="text" name="" placeholder="Provincia">
+									            <br>
+									            <input class="form-control" type="text" name="" placeholder="País">
+									            <br>
+											</form>
+									      </div>
+									      <div class="modal-footer">
+									        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+									        <button type="button" class="btn btn-primary">Agregar</button>
+									      </div>
+									    </div>
+									  </div>
+								</div>
+
+					 	    	<div class="row">
+					 	    			<div class="col-md-12">
+											
+										  <table class="table">
+										  <thead class="thead-dark">
+										    <tr>
+										      <th scope="col">#</th>
+										      <th scope="col">FUERZA</th>
+										      <th scope="col">GRADO</th>
+										      <th scope="col">CARGO</th>
+										      <th scope="col">DESTINO</th>
+										      <th scope="col">FECHA ALTA</th>
+										      <th scope="col">FECHA BAJA</th>
+										    </tr>
+										  </thead>
+										  <tbody>
+										    <tr>
+										      <th scope="row">1</th>
+										      <td>EA</td>
+										      <td>ASP. 1er AÑO</td>
+										      <td>ASPIRANTE</td>
+										      <td>ESCUELA SARG. CABRAL</td>
+										      <td>SALTA</td>
+										      <td>ARG</td>
+										    </tr>
+										  </tbody>
+											</table>
+										</div>
+								</div>
+
+											<!--<form>
+												<select class="custom-select" id="tipo">
+									              <option selected>Nivel de estudio</option>
+									              <option value="primario">PRIMARIO</option>
+									              <option value="secundario">SECUNDARIO</option>
+									              <option value="terciario">TERCIARIO</option>
+									              <option value="universitario">UNIVERSITARIO</option>
+									              <option value="otro">OTRO</option>
+									            </select>
+									            <br>
+									            <div class="container" style="padding-top: 10px;">
+									            	<div class="form-check">
+												 	<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+												  	<label class="form-check-label" for="exampleRadios1">
+												    Completo
+												  </label>
+												</div>
+												<div class="form-check">
+												  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+												  <label class="form-check-label" for="exampleRadios2">
+												    En curso
+												  </label>
+												</div>
+												<div class="form-check">
+												  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+												  <label class="form-check-label" for="exampleRadios2">
+												    Incompleto
+												  </label>
+												</div>
+									            </div>
+												<br>
+									            <input class="form-control" type="text" name="" placeholder="Título obtenido">          	
+									            <br>
+									            <input class="form-control" type="text" name="" placeholder="PROMEDIO">
+									            <br>
+									            <input class="form-control" type="text" name="" placeholder="Establecimiento">
+									            <br>
+									            <input class="form-control" type="text" name="" placeholder="Localidad">
+									            <br>
+									            <input class="form-control" type="text" name="" placeholder="Provincia">
+									            <br>
+									            <input class="form-control" type="text" name="" placeholder="País">
+									            <br>
+											</form>-->
+
+												<!--<p>
+											        <input type="text" id="inputeste" size="20" value="" placeholder="" />
+											        <a class="btn btn-danger" href="javascript:void(0)" id="remInput">
+											        	<span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+											        	Remover Campo
+													</a>
+										        </p>-->
+							</div>
+
+							<div class="tab-pane container fade" id="familiares">
+					 	    	<br>
+					 			<br>
+								<div class="row">
+									<h4>PADRE / MADRE/ HNOS./ HIJOS / TUTOR</h4>
+					 	    		<br>
+								</div>
+
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Agregar familiar</button>
+								<br>
+								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									  <div class="modal-dialog" role="document">
+									    <div class="modal-content">
+									      <div class="modal-header">
+									        <h5 class="modal-title" id="exampleModalLabel">Agregar</h5>
+									        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									          <span aria-hidden="true">&times;</span>
+									        </button>
+									      </div>
+									      <div class="modal-body">
+									        <form>
+												<select class="custom-select" id="tipo">
+									              <option selected>Nivel de estudio</option>
+									              <option value="primario">PRIMARIO</option>
+									              <option value="secundario">SECUNDARIO</option>
+									              <option value="terciario">TERCIARIO</option>
+									              <option value="universitario">UNIVERSITARIO</option>
+									              <option value="otro">OTRO</option>
+									            </select>
+									            <br>
+									            <div class="container" style="padding-top: 10px;">
+									            	<div class="form-check">
+												 	<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+												  	<label class="form-check-label" for="exampleRadios1">
+												    Completo
+												  </label>
+												</div>
+												<div class="form-check">
+												  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+												  <label class="form-check-label" for="exampleRadios2">
+												    En curso
+												  </label>
+												</div>
+												<div class="form-check">
+												  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+												  <label class="form-check-label" for="exampleRadios2">
+												    Incompleto
+												  </label>
+												</div>
+									            </div>
+												<br>
+									            <input class="form-control" type="text" name="" placeholder="Título obtenido">          	
+									            <br>
+									            <input class="form-control" type="text" name="" placeholder="PROMEDIO">
+									            <br>
+									            <input class="form-control" type="text" name="" placeholder="Establecimiento">
+									            <br>
+									            <input class="form-control" type="text" name="" placeholder="Localidad">
+									            <br>
+									            <input class="form-control" type="text" name="" placeholder="Provincia">
+									            <br>
+									            <input class="form-control" type="text" name="" placeholder="País">
+									            <br>
+											</form>
+									      </div>
+									      <div class="modal-footer">
+									        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+									        <button type="button" class="btn btn-primary">Agregar</button>
+									      </div>
+									    </div>
+									  </div>
+								</div>
+
+					 	    	<div class="row">
+					 	    			<div class="col-md-12">
+											
+										  <table class="table">
+										  <thead class="thead-dark">
+										    <tr>
+										      <th scope="col">#</th>
+										      <th scope="col">VINCULO</th>
+										      <th scope="col">VIVE?</th>
+										      <th scope="col">CONVIVE</th>
+										      <th scope="col">APELLIDO</th>
+										      <th scope="col">NOMBRE</th>
+										      <th scope="col">DNI</th>
+										    </tr>
+										  </thead>
+										  <tbody>
+										    <tr>
+										      <th scope="row">1</th>
+										      <td>PADRE</td>
+										      <td>SI</td>
+										      <td>SI</td>
+										      <td>ROMANO</td>
+										      <td>LORENZO</td>
+										      <td>16765245</td>
+										    </tr>
+										    <tr>
+										      <th scope="row">2</th>
+										      <td>MADRE</td>
+										      <td>SI</td>
+										      <td>SI</td>
+										      <td>FERNANDEZ</td>
+										      <td>VICTORIA</td>
+										      <td>17652354</td>
+										    </tr>
+										    <tr>
+										      <th scope="row">3</th>
+										      <td>HERMANO</td>
+										      <td>SI</td>
+										      <td>NO</td>
+										      <td>ROMANO</td>
+										      <td>ESTEBAN</td>
+										      <td>32673844</td>
 										    </tr>
 										  </tbody>
 											</table>
