@@ -16,6 +16,42 @@
     font-size: 50%;
   }
     }
+
+@media screen and (max-width: 600px) {
+       table {
+           width:100%;
+       }
+       thead {
+           display: none;
+       }
+       tr:nth-of-type(2n) {
+           background-color: inherit;
+       }
+       tr td:first-child {
+           background: #f0f0f0;
+           font-weight:bold;
+           font-size:1.3em;
+       }
+       tbody td {
+           display: block;
+           text-align:center;
+       }
+       tbody td:before {
+           content: attr(data-th);
+           display: block;
+           text-align:center;
+       }
+
+		td:nth-of-type(1):before { content: "NIVEL";  font-weight: bold; }
+		td:nth-of-type(2):before { content: "ESTADO"; font-weight: bold;  }
+		td:nth-of-type(3):before { content: "TITULO"; font-weight: bold;  }
+		td:nth-of-type(4):before { content: "ESTABLECIMIENTO";  font-weight: bold; }
+		td:nth-of-type(5):before { content: "PROVINCIA"; font-weight: bold;  }
+		td:nth-of-type(6):before { content: "PAIS"; font-weight: bold;  }
+}
+
+
+
   </style>
 </head>
 <body>
@@ -534,18 +570,25 @@
 
 						<div class="tab-pane container fade" id="estudio">
 				 	    	<br>
-				 	    	<div class="row">
-				 	    		<div class="col-md-4">
-										<a class="btn btn-primary" href="javascript:void(0)" id="addInput">
-											<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-											Agregar Estudio
-										</a>
-			 	    			</div>
-				 	    		<div class="col-md-8">
-				 	    			<div id="dynamicDiv" style="border:solid 1px #ccc;border-radius:15px;
-										box-shadow: 0px 20px 15px -15px #818181;
-											padding-top: 20px;">
-										<form>
+				 			<br>
+							<div class="row">
+								<h4>Máximo nivel alcanzado</h4>
+				 	    		<br>
+							</div>
+
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Agregar Estudio</button>
+
+								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								  <div class="modal-dialog" role="document">
+								    <div class="modal-content">
+								      <div class="modal-header">
+								        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>
+								      </div>
+								      <div class="modal-body">
+								        <form>
 											<select class="custom-select" id="tipo">
 								              <option selected>Nivel de estudio</option>
 								              <option value="primario">PRIMARIO</option>
@@ -589,6 +632,100 @@
 								            <input class="form-control" type="text" name="" placeholder="País">
 								            <br>
 										</form>
+								      </div>
+								      <div class="modal-footer">
+								        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+								        <button type="button" class="btn btn-primary">Agregar</button>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+
+
+
+
+				 	    	<div class="row">
+				 	    		<div class="col-md-12">
+										
+									  <table class="table">
+									  <thead class="thead-dark">
+									    <tr>
+									      <th scope="col">#</th>
+									      <th scope="col">NIVEL</th>
+									      <th scope="col">ESTADO</th>
+									      <th scope="col">TITULO</th>
+									      <th scope="col">ESTABLECIMIENTO</th>
+									      <th scope="col">PROVINCIA</th>
+									      <th scope="col">PAIS</th>
+									    </tr>
+									  </thead>
+									  <tbody>
+									    <tr>
+									      <th scope="row">1</th>
+									      <td>SECUNDARIO</td>
+									      <td>COMPLETO</td>
+									      <td>POLIMODAL</td>
+									      <td>ENET 3</td>
+									      <td>SALTA</td>
+									      <td>ARG</td>
+									    </tr>
+									    <tr>
+									      <th scope="row">2</th>
+									      <td>UNIVERSITARIO</td>
+									      <td>COMPLETO</td>
+									      <td>LIC EN INFORMATICA</td>
+									      <td>UP</td>
+									      <td>CABA</td>
+									      <td>ARGENTINA</td>
+									    </tr>
+									  </tbody>
+									</table>
+									</div>
+									  </div></div>	
+										<!--<form>
+											<select class="custom-select" id="tipo">
+								              <option selected>Nivel de estudio</option>
+								              <option value="primario">PRIMARIO</option>
+								              <option value="secundario">SECUNDARIO</option>
+								              <option value="terciario">TERCIARIO</option>
+								              <option value="universitario">UNIVERSITARIO</option>
+								              <option value="otro">OTRO</option>
+								            </select>
+								            <br>
+								            <div class="container" style="padding-top: 10px;">
+								            	<div class="form-check">
+											 	<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+											  	<label class="form-check-label" for="exampleRadios1">
+											    Completo
+											  </label>
+											</div>
+											<div class="form-check">
+											  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+											  <label class="form-check-label" for="exampleRadios2">
+											    En curso
+											  </label>
+											</div>
+											<div class="form-check">
+											  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+											  <label class="form-check-label" for="exampleRadios2">
+											    Incompleto
+											  </label>
+											</div>
+								            </div>
+											<br>
+								            <input class="form-control" type="text" name="" placeholder="Título obtenido">          	
+								            <br>
+								            <input class="form-control" type="text" name="" placeholder="PROMEDIO">
+								            <br>
+								            <input class="form-control" type="text" name="" placeholder="Establecimiento">
+								            <br>
+								            <input class="form-control" type="text" name="" placeholder="Localidad">
+								            <br>
+								            <input class="form-control" type="text" name="" placeholder="Provincia">
+								            <br>
+								            <input class="form-control" type="text" name="" placeholder="País">
+								            <br>
+										</form>-->
 
 											<!--<p>
 										        <input type="text" id="inputeste" size="20" value="" placeholder="" />
