@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>SINU-ARA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -79,8 +79,8 @@
 	  <div class="collapse navbar-collapse" id="collapsibleNavbar">
 	    <ul class="nav navbar-nav ml-auto">
 	      <li class="nav-item">
-	        <a class="nav-link" href="ingresar.html">Cerrar</a>
-	      </li>
+        <a class="btn btn-secondary" href="index.html">Cerrar Sesion</a>
+      </li>
 	    </ul>
 	  </div> 
 	   </div> 
@@ -106,7 +106,7 @@
       <a class="nav-link" data-toggle="pill" href="#documentacion">Documentación</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link disabled" data-toggle="pill" href="#presentacion">Presentación</a>
+      <a class="nav-link " data-toggle="pill" href="#presentacion">Presentación</a>
     </li>
   </ul>
 <!-- Nav pills (FIN MENU PROCESO)------------------------------------------------------------>
@@ -208,10 +208,15 @@
 	    <!--FIN PROCESO 2 ENTREVISTA------------------->
 
 	    <!--INICIO PROCESO 3 DOCUMENTACION------------->
+       
 		    <div id="documentacion" class="container tab-pane fade"><br>
 		    	<h3 class="text-center">Información complementaria</h3>
 		    	<br>
-
+                <div class="d-flex flex-row-reverse">
+                    <button type="button" class="btn btn-primary">Enviar Documentacion</button>
+                    <button type="button" class="btn btn-info">Guardar</button>
+                </div>
+                <br>
 		    	<!-- Nav pills INICIO SUBMENU DOCUMENTACION-->
 		    		<div class="row">
 		    		<div class="col-md-12">
@@ -222,15 +227,27 @@
 						  <li class="nav-item">
 						    <a class="nav-link" data-toggle="pill" href="#nacionalidad">Nacionalidad</a>
 						  </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#antecedentespenales">Antecedentes Penales</a>
+                            </li>
 						  <li class="nav-item">
 						    <a class="nav-link" data-toggle="pill" href="#domicilio">Domicilio</a>
 						  </li>
 						  <li class="nav-item">
 						    <a class="nav-link" data-toggle="pill" href="#estudio">Estudios</a>
 						  </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#idioma">Idiomas</a>
+                            </li>
 						  <li class="nav-item">
-						    <a class="nav-link" data-toggle="pill" href="#actividades">Actividades</a>
+						    <a class="nav-link" data-toggle="pill" href="#actividades">Actividad Militar o FFSS</a>
 						  </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#ocupacion">Situacion Ocupacional</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#talla">Talla</a>
+                            </li>
 						  <li class="nav-item">
 						    <a class="nav-link" data-toggle="pill" href="#familiares">Familiares</a>
 						  </li>
@@ -243,60 +260,57 @@
 		    		<div class="row">
 			    		<div class="col-md-12">
 						<div class="tab-content container">
+
 							<div class="tab-pane container active" id="datosPersonales">
 								<br>
-								<div class="row">
-									<h4></h4>
-					 	    		<br>
-								</div>
-								<div class="btn-group" role="group" aria-label="Basic example">
+								<!--<div class="btn-group" role="group" aria-label="Basic example">
 									  <button type="button" class="btn btn-secondary" onclick="quitarReadOnly()">Editar</button>
 									  <button type="button" class="btn btn-secondary" onclick="ponerReadOnly()">Guardar</button>
-								</div>
+								</div>-->
 								<div class="row">
 									<div class="col-md-6">
 										<br>
 										<form>
 									      	<div class="form-group row">
-											    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Apellido</label>
+											    <label for="staticEmail" class="col-sm-4 col-form-label">Apellido</label>
 											    <div class="col-sm-8">
-											      <input class="form-control" readonly type="text" name="apellido"  id="apellido" value="ROMANO">
+											      <input class="form-control" type="text" name="apellido"  id="apellido" value="ROMANO">
 											    </div>
 											  </div>
 							                <div class="form-group row">
-											    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Nombre</label>
+											    <label for="staticEmail" class="col-sm-4 col-form-label">Nombre</label>
 											    <div class="col-sm-8">
-							                		<input class="form-control" readonly type="text" name="name"  id="name" value="JONATHAN FERNANDO">
+							                		<input class="form-control" type="text" name="name"  id="name" value="JONATHAN FERNANDO">
 											    </div>
 											  </div>
 											<div class="form-group row">
-											    <label for="staticEmail" class="col-sm-4 col-form-label text-center">DNI</label>
+											    <label for="staticEmail" class="col-sm-4 col-form-label">DNI</label>
 											    <div class="col-sm-8">
-							                	<input class="form-control"readonly type="text" name="dni" id="dni" value="38654265">
+							                	<input class="form-control" type="text" name="dni" id="dni" value="38654265">
 											    </div>
 											</div>  
 							                <div class="form-group row">
-											    <label for="staticEmail" class="col-sm-4 col-form-label text-center">E-m@il</label>
+											    <label for="staticEmail" class="col-sm-4 col-form-label">E-m@il</label>
 											    <div class="col-sm-8">
-							                	<input class="form-control"readonly type="email" name="email" id="email" value="jromano@ara.mil.ar">
+							                	<input class="form-control" type="email" name="email" id="email" value="jromano@ara.mil.ar">
 											    </div>
 											</div>
 											<div class="form-group row">
 											    <label for="staticEmail" class="col-sm-4 col-form-label">Clave usuario SINU</label>
 											    <div class="col-sm-8">
-							               		 <input type="password" class="form-control" id="pwd" placeholder="" name="pswd" readonly value="12345678"> 
+							               		 <input type="password" class="form-control" id="pwd" placeholder="" name="pswd" value="12345678"> 
 											    </div>
 											</div> 
 							                <div class="form-group row">
-											    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Teléfono</label>
+											    <label for="staticEmail" class="col-sm-4 col-form-label">Teléfono</label>
 												<div class="col-sm-8">
-								                <input class="form-control"readonly type="telefono" name="telefono" id="telefono" value="1137837319">
+								                <input class="form-control" type="telefono" name="telefono" id="telefono" value="1137837319">
 												</div>
 											</div>
 							                <div class="form-group row">
-											    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Delegación</label>
+											    <label for="staticEmail" class="col-sm-4 col-form-label">Delegación</label>
 											    <div class="col-sm-8">
-											      <select class="custom-select" id="tipo" disabled>
+											      <select class="custom-select" id="tipo">
 									              <option selected>BUENOS AIRES</option>
 									              <option value="salta">SALTA</option>
 									              <option value="bsas">BUENOS AIRES</option>
@@ -309,9 +323,9 @@
 												padding-top: 20px;">
 												
 												<div class="form-group row">
-											    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Ingreso</label>
+											    <label for="staticEmail" class="col-sm-4 col-form-label">Ingreso</label>
 											    <div class="col-sm-8">
-											      <select class="custom-select" id="tipo" disabled>
+											      <select class="custom-select" id="tipo" >
 									              <option selected>Escuela de Formación</option>
 									              <option value="">Escuela de Formación</option>
 									              <option value="">Profesionales</option>
@@ -321,7 +335,7 @@
 											    </div>
 											  </div>
 											  <div class="form-group row">
-											    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Preferencia</label>
+											    <label for="staticEmail" class="col-sm-4 col-form-label">Preferencia</label>
 											    <div class="col-sm-8">
 											      <select class="custom-select" id="tipo">
 										              <option selected>Seleccioná...</option>
@@ -337,25 +351,25 @@
 										<br>
 										<form>
 											<div class="form-group row">
-											    <label for="staticEmail" class="col-sm-4 col-form-label text-center">CUIL/CUIT</label>
+											    <label for="staticEmail" class="col-sm-4 col-form-label">CUIL/CUIT</label>
 											    <div class="col-sm-8">
 							                	<input class="form-control" type="text" name="cuil" id="cuil" value="">
 											    </div>
 											</div>
 											<div class="form-group row">
-											    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Fecha nacimiento</label>
+											    <label for="staticEmail" class="col-sm-4 col-form-label">Fecha nacimiento</label>
 											    <div class='col-sm-8'>
 							                    	<input type='date' class="form-control"/>
 							                   	</div>
 											</div>
 											<div class="form-group row">
-											    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Edad</label>
+											    <label for="staticEmail" class="col-sm-4 col-form-label">Edad</label>
 											    <div class="col-sm-8">
 							                	<input class="form-control" type="text" name="edad" id="edad" value="">
 											    </div>
 											</div>
 											<div class="form-group row">
-											    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Sexo</label>
+											    <label for="staticEmail" class="col-sm-4 col-form-label">Sexo</label>
 											    <div class="col-sm-8">
 							                		<select class="custom-select" id="tipo">
 										              <option selected>Seleccioná...</option>
@@ -365,7 +379,7 @@
 											    </div>
 											</div>    
 											<div class="form-group row">
-											    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Estado civil</label>
+											    <label for="staticEmail" class="col-sm-4 col-form-label">Estado civil</label>
 											    <div class="col-sm-8">
 											      <select class="custom-select" id="tipo">
 										              <option selected>Seleccioná...</option>
@@ -379,7 +393,7 @@
 											    </div>
 							  				</div>
 							  				<div class="form-group row">
-											    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Religión</label>
+											    <label for="staticEmail" class="col-sm-4 col-form-label">Religión</label>
 											    <div class="col-sm-8">
 							                	<input class="form-control" type="text" name="relig" id="relig" value="">
 											    </div>
@@ -397,52 +411,141 @@
 							</div>
 
 							<div class="tab-pane container fade" id="nacionalidad">
-								<br>
-								<div class="row">
-									<h4></h4>
-					 	    		<br>
-								</div>
-								<div class="btn-group" role="group" aria-label="Basic example">
+								<!--<div class="btn-group" role="group" aria-label="Basic example">
 									  <button type="button" class="btn btn-secondary" onclick="quitarReadOnly()">Editar</button>
 									  <button type="button" class="btn btn-secondary" onclick="ponerReadOnly()">Guardar</button>
-								</div>
+								</div>-->
 								<br>
 								<div class="row">
 									<div class="col-md-6">
 										<br>
-										<form>
 											<div class="form-group row">
-											    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Nacionalidad</label>
+											    <label for="staticEmail" class="col-sm-4 col-form-label">Nacionalidad</label>
 											    <div class="col-sm-8">
-							                	<input class="form-control" type="nac" name="nac" id="cuil" value="">
-											    </div>
+                                                     	<input class="form-control" type="nac" name="nac" id="nacionalidad" value="">
+                                                </div>
 											</div>
-											<div class="form-group row">
-											    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Fecha entrada país</label>
-											    <div class='col-sm-8'>
-							                    	<input type='date' class="form-control"/>
-							                   	</div>
-											</div>
-										</form>		
+                                            <br>
+                                            <div class="form-group row">
+                                                <label for="staticEmail" class="col-sm-4 col-form-label">Tipo de Nacionalidad</label>
+                                                <div class='col-sm-8'>
+                                                    <select class="custom-select" id="tipoNacionalidad">
+                                                        <option selected>Nacionalidad</option>
+                                                        <option value="nativo">NATIVO</option>
+                                                        <option value="porOpcion">POR OPCION</option>
+                                                        <option value="naturalizado">NATURALIZADO</option>
+                                                    </select>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="staticEmail" class="col-sm-4 col-form-label">Fecha entrada país</label>
+                                                <div class='col-sm-8'>
+                                                    <input type='date' class="form-control" />
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group row">
+                                                <label for="staticEmail" class="col-sm-4 col-form-label">N° Expediente Nacionalidad </label>
+                                                <div class="col-sm-8">
+                                                    <input class="form-control" type="text" name="numeroExpediente" id="numeroExpediente" value="">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="staticEmail" class="col-sm-4 col-form-label">Fecha Naturalizado</label>
+                                                <div class='col-sm-8'>
+                                                    <input type='date' class="form-control" id="fechaNaturalizado" />
+                                                </div>
+                                            </div>	
 									</div>
 									<div class="col-md-6">
-										<form>
+										<br>
+										<div class="form-group row">
+                                                <label for="staticEmail" class="col-sm-4 col-form-label">Fecha por Opcion</label>
+                                                <div class='col-sm-8'>
+                                                    <input type='date' class="form-control" id="fechaOpcion" />
+                                                </div>
+                                            </div>
 											<div class="form-group row">
-											    <label for="staticEmail" class="col-sm-4 col-form-label text-center">País</label>
-											    <div class="col-sm-8">
-							                	<input class="form-control" type="text" name="edad" id="edad" value="">
-											    </div>
-											</div>
-							  				<div class="form-group row">
-											    <label for="staticEmail" class="col-sm-4 col-form-label text-center">Provincia</label>
-											    <div class="col-sm-8">
-							                	<input class="form-control" type="text" name="relig" id="relig" value="">
-											    </div>
-											</div>
-										</form>
+                                            <label for="staticEmail" class="col-sm-4 col-form-label text-center">Lugar de nacimiento</label>
+                                            <div class='col-sm-8'>
+                                                    <input class="form-control" type="text" name="relig" id="relig" value="">
+                                                </div>
+                                            </div>							
+                                            <div class="form-group row">
+                                                <label for="staticEmail" class="col-sm-4 col-form-label">País </label>
+                                                <div class="col-sm-8">
+                                                    <input class="form-control" type="text" name="edad" id="pais" value="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="staticEmail" class="col-sm-4 col-form-label">Provincia</label>
+                                                <div class="col-sm-8">
+                                                    <input class="form-control" type="text" name="relig" id="relig" value="">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="staticEmail" class="col-sm-4 col-form-label">Ciudad </label>
+                                                <div class="col-sm-8">
+                                                    <input class="form-control" type="text" name="edad" id="pais" value="">
+                                                </div>
+                                            </div>
 									</div>
 								</div>
 							</div>
+
+                            <div class="tab-pane container fade" id="antecedentespenales">
+                            	<h4>Autorizacion antecedentes Penales - TAD</h4>
+                                <br>
+                                <div class="row">
+                                    <div class="col-md-5">
+                                            <input class="btn btn-outline-info" type="file">
+                                    </div>
+                                	<div class="col-md-3">
+                                        <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#exampleModalAntecedentesPenales" data-whatever="@getbootstrap">Ver ejemplo</button>
+                                    </div>
+                                    <div class="col-md-4">
+                                           <div class="modal fade" id="exampleModalAntecedentesPenales" tabindex="-1" role="dialog" aria-labelledby="exampleModalActividades" aria-hidden="true">
+												  <div class="modal-dialog" role="document">
+												    <div class="modal-content">
+												      <div class="modal-header">
+												        <h5 class="modal-title" id="exampleModalLabel">MODELO TAD</h5>
+												        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												          <span aria-hidden="true">&times;</span>
+												        </button>
+												      </div>
+												      <div class="modal-body">
+												        <form>
+															
+			                                                <img class="img " style="width: 100%;" src="TAD4.PNG">
+			                                                
+														</form>
+												      </div>
+												      <div class="modal-footer">
+												        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+												        <button type="button" class="btn btn-primary">Agregar</button>
+												      </div>
+												    </div>
+												  </div>
+											</div>
+											<img class="img img-thumbnail " src="TAD1.PNG">
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row"> 
+                                    <div class="col-md-4">
+                                      
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="img-responsive" style="width: 100%; height:100%;" src="TAD2.PNG">
+                                    </div>
+                                    <div class="col-md-4">
+                                    </div>
+                                </div>
+                            </div>
 
 							<div class="tab-pane container fade" id="domicilio">
 								<br>
@@ -450,10 +553,10 @@
 									<h4>Domicilio real DNI</h4>
 					 	    		<br>
 								</div>
-								<div class="btn-group" role="group" aria-label="Basic example">
+								<!--<div class="btn-group" role="group" aria-label="Basic example">
 									  <button type="button" class="btn btn-secondary" onclick="quitarReadOnly()">Editar</button>
 									  <button type="button" class="btn btn-secondary" onclick="ponerReadOnly()">Guardar</button>
-								</div>
+								</div>-->
 					 	    	<div class="row">
 					 	    		<div class="col-md-6">
 					 	    			<br>
@@ -744,6 +847,202 @@
 										        </p>-->
 							</div>
 
+                            <!---ALternativa de presentar idioma -->
+
+                            <!--<div class="tab-pane container fade" id="idioma">
+                                <br>
+                                <div class="row">
+                                    <h4>IDIOMAS</h4>
+                                    <br>
+                                </div>
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn btn-secondary" onclick="ponerReadOnly()">Guardar</button>
+                                    <button type="button" class="btn btn-primary" onclick="agregarIdioma()">Agregar Idioma</button>
+                                </div>
+                                <br />
+                                    
+                                          <form class="formIdioma">
+                                            <div class="row" id="idiomaagregar">
+                                                <div class="form-group row">
+                                                                                                       
+                                                    <div class="col-sm-6">
+                                                        <label for="staticEmail" class="text">Idioma</label>
+                                                        <input class="form-control" type="text" name="lengua" id="lengua" value="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <div class="container" style="padding-top: 10px;">
+                                                            <label class="modal-title">¿HABLA?</label>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="exampleRadios0" id="exampleRadios1" value="option1" checked>
+                                                                <label class="form-check-label" for="exampleRadios1">
+                                                                    SI
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="exampleRadios0" id="exampleRadios2" value="option2">
+                                                                <label class="form-check-label" for="exampleRadios2">
+                                                                    NO
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="container" style="padding-top: 10px;">
+                                                            <label class="modal-title">¿LEE?</label>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                                <label class="form-check-label" for="exampleRadios1">
+                                                                    SI
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                                                <label class="form-check-label" for="exampleRadios2">
+                                                                    NO
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="container" style="padding-top: 10px;">
+                                                            <label class="modal-title">¿ESCRIBE?</label>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios3" value="option1" checked>
+                                                                <label class="form-check-label" for="exampleRadios3">
+                                                                    SI
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios4" value="option2">
+                                                                <label class="form-check-label" for="exampleRadios4">
+                                                                    NO
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>                                                
+                                            </div>
+                                        </form>
+                                                                     
+                                </div>-->
+                                                              
+                            <div class="tab-pane container fade" id="idioma">
+                                <br>
+                                <br>
+                                <div class="row">
+                                    <h4>Idiomas</h4>
+                                    <br>
+                                </div>
+
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalIdioma" data-whatever="@getbootstrap">Agregar</button>
+                                <br>
+                                <div class="modal fade" id="exampleModalIdioma" tabindex="-1" role="dialog" aria-labelledby="exampleModalIdioma" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Agregar Idioma</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <br>
+                                                    <input class="form-control" type="text" name="" placeholder="Idioma">
+                                                    <br>
+
+                                                    <label class="modal-title">¿Habla?</label>
+                                                    <div class="container" style="padding-top: 10px;">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="exampleRadios0" id="exampleRadios1" value="option1" checked>
+                                                            <label class="form-check-label" for="exampleRadios1">
+                                                                SI
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="exampleRadios0" id="exampleRadios2" value="option2">
+                                                            <label class="form-check-label" for="exampleRadios2">
+                                                                NO
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <label class="modal-title">¿Lee?</label>
+                                                    <div class="container" style="padding-top: 10px;">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                            <label class="form-check-label" for="exampleRadios1">
+                                                                SI
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                                            <label class="form-check-label" for="exampleRadios2">
+                                                                NO
+                                                            </label>
+                                                        </div>
+                                                    </div>
+
+                                                    <br>
+                                                    <label class="modal-title">¿Escribe?</label>
+                                                    <div class="container" style="padding-top: 10px;">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios3" value="option1" checked>
+                                                            <label class="form-check-label" for="exampleRadios3">
+                                                                SI
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios4" value="option2">
+                                                            <label class="form-check-label" for="exampleRadios4">
+                                                                NO
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                                <button type="button" class="btn btn-primary">Agregar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">Idioma</th>
+                                                    <th scope="col">habla</th>
+                                                    <th scope="col">lee</th>
+                                                    <th scope="col">escribe</th>
+                                                    
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Ingles</td>
+                                                    <td>SI</td>
+                                                    <td>SI</td>
+                                                    <td>No</td>                                                    
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+               
+                            </div>
+
+
+                            <!-- fin idiomas-->
+                            
 							<div class="tab-pane container fade" id="actividades">
 					 	    	<br>
 					 			<br>
@@ -752,13 +1051,13 @@
 					 	    		<br>
 								</div>
 
-								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Agregar actividad</button>
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalActividades" data-whatever="@getbootstrap">Agregar actividad</button>
 								<br>
-								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal fade" id="exampleModalActividades" tabindex="-1" role="dialog" aria-labelledby="exampleModalActividades" aria-hidden="true">
 									  <div class="modal-dialog" role="document">
 									    <div class="modal-content">
 									      <div class="modal-header">
-									        <h5 class="modal-title" id="exampleModalLabel">Actividad</h5>
+									        <h5 class="modal-title" id="exampleModalLabel">Actividad en FFAA o FFSS</h5>
 									        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 									          <span aria-hidden="true">&times;</span>
 									        </button>
@@ -766,47 +1065,94 @@
 									      <div class="modal-body">
 									        <form>
 												<select class="custom-select" id="tipo">
-									              <option selected>Nivel de estudio</option>
-									              <option value="primario">PRIMARIO</option>
-									              <option value="secundario">SECUNDARIO</option>
-									              <option value="terciario">TERCIARIO</option>
-									              <option value="universitario">UNIVERSITARIO</option>
-									              <option value="otro">OTRO</option>
+                                                  <option selected>fuerza</option>
+									              <option value="ejercito">EJERCITO</option>
+									              <option value="armada">ARMADA</option>
+									              <option value="gendarmeria">GENDARMERIA</option>
+									              <option value="prefectura">PREFECTURA</option>
+									              <option value="policia">POLICIA</option>
+                                                  <option value="institutoMilitar">INSTITUTO MILITAR</option>
 									            </select>
 									            <br>
+                                                <label class="modal-title">¿solicito ingreso anteriormente?</label>
 									            <div class="container" style="padding-top: 10px;">
 									            	<div class="form-check">
 												 	<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
 												  	<label class="form-check-label" for="exampleRadios1">
-												    Completo
+												    SI
 												  </label>
 												</div>
-												<div class="form-check">
-												  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-												  <label class="form-check-label" for="exampleRadios2">
-												    En curso
-												  </label>
-												</div>
-												<div class="form-check">
-												  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-												  <label class="form-check-label" for="exampleRadios2">
-												    Incompleto
-												  </label>
-												</div>
+												    <div class="form-check">
+												      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+												      <label class="form-check-label" for="exampleRadios2">
+												        NO
+												      </label>
+												    </div>
 									            </div>
-												<br>
-									            <input class="form-control" type="text" name="" placeholder="Título obtenido">          	
+                                                
+                                                <br>
+                                                <label class="modal-title">¿Ingreso?</label>
+                                                <div class="container" style="padding-top: 10px;">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios3" value="option1" checked>
+                                                        <label class="form-check-label" for="exampleRadios3">
+                                                            SI
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios4" value="option2">
+                                                        <label class="form-check-label" for="exampleRadios4">
+                                                            NO
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <label for="modal-title" class="modal-title">Fecha Ingreso</label>
+                                                <div class='col-sm-8'>
+                                                    <input type='date' class="form-control" />
+                                                </div>
+
+
+                                                <br>
+                                                <label for="modal-title" class="modal-title">Fecha Baja</label>
+                                                <div class='col-sm-8'>
+                                                    <input type='date' class="form-control" />
+                                                </div>
+                                                
+                                                <br>
+                                                <input class="form-control" type="text" name="" placeholder="Motivo de no Ingreso"> 
+                                                
+                                                <br>
+                                                <select class="custom-select" id="causabaja">
+                                                    <option selected>tipo de baja</option>
+                                                    <option value="obligatoria">OBLIGATORIA</option>
+                                                    <option value="voluntaria">VOLUNTARIA</option>
+                                                </select>
+                                                
+                                                <br>
+                                                <br>
+                                                <input class="form-control" type="text" name="" placeholder="Motivo baja">
+
+                                                <br>
+									            <input class="form-control" type="text" name="" placeholder="Jerarquia">          	
 									            <br>
-									            <input class="form-control" type="text" name="" placeholder="PROMEDIO">
+									            <input class="form-control" type="text" name="" placeholder="Cargo">
 									            <br>
-									            <input class="form-control" type="text" name="" placeholder="Establecimiento">
+									            <input class="form-control" type="text" name="" placeholder="Destino">
 									            <br>
-									            <input class="form-control" type="text" name="" placeholder="Localidad">
-									            <br>
-									            <input class="form-control" type="text" name="" placeholder="Provincia">
-									            <br>
-									            <input class="form-control" type="text" name="" placeholder="País">
-									            <br>
+
+                                                <br>
+                                               
+                                                <select class="custom-select" id="situacionRevista">
+                                                    <option selected>Situacion de Revista</option>
+                                                    <option value="actividad">ACTIVIDAD</option>
+                                                    <option value="retirado">RETIRADO</option>
+                                                    <option value="jubilado">JUBILADO</option>
+                                                    <option value="retiradoEnServicio">RETIRADO EN SERVICIO</option>
+                                                    
+                                                </select>
+
+                                                
 											</form>
 									      </div>
 									      <div class="modal-footer">
@@ -901,16 +1247,156 @@
 										        </p>-->
 							</div>
 
+
+                            <div class="tab-pane container fade" id="ocupacion">
+                                <br>
+                                <div class="row">
+                                    <h4>Situacion Ocupacional</h4>
+                                    <br>
+                                </div>
+                                <!--<div class="btn-group" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn btn-secondary" onclick="quitarReadOnly()">Editar</button>
+                                    <button type="button" class="btn btn-secondary" onclick="ponerReadOnly()">Guardar</button>
+                                </div>-->
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <br>
+                                        <form>
+                                          
+                                                <div class="form-group row">
+                                                    <label for="staticEmail" class="col-sm-6 col-form-label text-center">Situacion Ocupacional</label>
+                                                    <select class="custom-select col-md-6" id="situacioocupacional">
+                                                        <option selected>Selecione</option>
+                                                        <option value="ocupado">OCUPADO</option>
+                                                        <option value="desocupado">DESOCUPADO</option>
+                                                        <option value="inactivo">INACTIVO</option>
+                                                    </select>
+                                                </div>
+                                                
+                                                <div class="form-group row">
+                                                    <label for="staticEmail" class="col-sm-6 col-form-label text-center">Descripcion</label>
+                                                    <div class="col-sm-6">
+                                                        <input class="form-control" type="text" name="descripcion" id="descripcion" placeholder="ej. jubilado | estudiante | pensionado" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="staticEmail" class="col-sm-6 col-form-label text-center">Oficio</label>
+                                                    <div class="col-sm-6">
+                                                        <input class="form-control" type="text" name="oficio" id="oficio" placeholder="ej. plomero | programador | médico" value="">
+                                                    </div>
+                                                </div>
+
+</form>
+                                    </div>
+                                    
+
+                                </div>
+
+                            </div>
+                            
+                            <div class="tab-pane container fade" id="talla">
+                                <br>
+                                <div class="row">
+                                    <h4>Talla</h4>
+                                    <br>
+                                </div>
+                                <!--<div class="btn-group" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn btn-secondary" onclick="quitarReadOnly()">Editar</button>
+                                    <button type="button" class="btn btn-secondary" onclick="ponerReadOnly()">Guardar</button>
+                                </div>-->
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <br>
+                                        <form>
+                                            <div class="form-group row">
+                                                <label for="staticEmail" class="col-sm-4 col-form-label text-center">Numero Calzado</label>
+                                                <div class="col-sm-8">
+                                                    <input class="form-control" type="text" name="calle" id="calzado" value="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="staticEmail" class="col-sm-4 col-form-label text-center" >Numero de cuello</label>
+                                                <div class="col-sm-8">
+                                                    <input class="form-control"  type="text" name="cuello" id="cuello" placeholder="cm" value="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="staticEmail" class="col-sm-4 col-form-label text-center">Altura</label>
+                                                <div class="col-sm-8">
+                                                    <input class="form-control" type="text" name="piso" id="altura"  placeholder="cm" value="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="staticEmail" class="col-sm-4 col-form-label text-center">Peso</label>
+                                                <div class="col-sm-8">
+                                                    <input class="form-control" type="text" name="peso" id="peso" placeholder="kg" value="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="staticEmail" class="col-sm-4 col-form-label text-center">Perimetro Cabeza (1)</label>
+                                                <div class="col-sm-8">
+                                                    <input class="form-control" type="text" name="peso" id="permitrocabeza" placeholder="cm" value="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="staticEmail" class="col-sm-4 col-form-label text-center">Perimetro torax (2)</label>
+                                                <div class="col-sm-8">
+                                                    <input class="form-control" type="text" name="permitrotorax" id="permitrotorax" placeholder="cm" value="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="staticEmail" class="col-sm-4 col-form-label text-center">Perimetro cintura (3)</label>
+                                                <div class="col-sm-8">
+                                                    <input class="form-control" type="text" name="permitrocintura" id="permitrocintura" placeholder="cm" value="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="staticEmail" class="col-sm-4 col-form-label text-center">Largo del Pantalon (4)</label>
+                                                <div class="col-sm-8">
+                                                    <input class="form-control" type="text" name="largoPantalon" id="largoPantalon" placeholder="cm" value="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="staticEmail" class="col-sm-4 col-form-label text-center">largo entrepiernas (5)</label>
+                                                <div class="col-sm-8">
+                                                    <input class="form-control" type="text" name="largoEntrepiernas" id="largoEntrepiernas" placeholder="cm" value="">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="staticEmail" class="col-sm-4 col-form-label text-center">Perimetro caderas (6)</label>
+                                                <div class="col-sm-8">
+                                                    <input class="form-control" type="text" name="permitrocaderas" id="permitrocaderas" placeholder="cm" value="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="staticEmail" class="col-sm-4 col-form-label text-center">Largo de falda (7)</label>
+                                                <div class="col-sm-8">
+                                                    <input class="form-control" type="text" name="largoFalda" id="permitrotorax" placeholder="cm" value="">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-md-6">
+                                        
+                                        <img class="img "style="width: 100%;" src="hombremedidas.jpg">
+                                    </div>
+
+                                    </div>
+                                                             
+                            </div>
+
 							<div class="tab-pane container fade" id="familiares">
 					 	    	<br>
 					 			<br>
 								<div class="row">
-									<h4>PADRE / MADRE/ HNOS./ HIJOS / TUTOR</h4>
+									<h4>FAMILIARES | CONVIVIENTES</h4>
 					 	    		<br>
 								</div>
-
-								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Agregar familiar</button>
-								<br>
+                                <br/>
+								<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap" >Agregar familiar</button>-->
+								<a class="btn btn-primary txt-lg" href="interfacePostulanteAgregarFamiliar.html" target="_blank" >+ Agregar</a>
+                                <br />
 								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 									  <div class="modal-dialog" role="document">
 									    <div class="modal-content">
@@ -921,7 +1407,9 @@
 									        </button>
 									      </div>
 									      <div class="modal-body">
-									        <form>
+									       
+                                               <form>
+                                                <br />
 												<select class="custom-select" id="tipo">
 									              <option selected>Nivel de estudio</option>
 									              <option value="primario">PRIMARIO</option>
@@ -973,7 +1461,7 @@
 									    </div>
 									  </div>
 								</div>
-
+                                <br>
 					 	    	<div class="row">
 					 	    			<div class="col-md-12">
 											
@@ -1081,6 +1569,39 @@
 				<!-- Tab panes FIN SUBPANELES DOCUMENTACION-->
 			</div>   
 		<!--FIN PROCESO 3 DOCUMENTACION---------------->
+
+        <!--INICIO PROCESO 4 presentacion---------------->
+        <div id="presentacion" class="container tab-pane fade">
+            <br>
+            <div class="row">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-6">
+                    <h3 class="text-center">Fecha Presentacion</h3>
+                    <br>
+                    <div class="alert alert-success" role="alert">
+                        <p class="text font-weight-bold">Fecha de presentación:</p> <a href="#" class="alert-link"> 05/07/2019 | 08:00</a>
+                        <p class="text font-weight-bold">Lugar de presentacion:</p><a href="#" class="alert-link" >Escuela Naval Militar,Rio Santiago prov BUENOS AIRES</a>
+                       <br />
+                         <p class="mb-0">Vestimenta, elegante sport. Presentarse con la documentación solicitada en el instructivo de inscripción y Numero de Preinscripcion.</p>
+                    </div>
+
+                    <div class="alert alert-info" role="alert">
+                        <h4 class="alert-heading">NUMERO DE PREINSCRIPCION</h4>
+                        <hr>
+                        <p class="text text-primary font-weight-bold text-center"> 2019-PROFESIONAL-4523841</p>
+                        <hr>
+                    </div>
+
+                    <a href="#" class="btn btn-info">Decargar Formulario</a>
+
+                </div>
+                <div class="col-md-3">
+                </div>
+            </div>
+        </div>
+        <!--FIN PROCESO 2 PRESENTACION------------------->
+
 	</div>
 <!-- Tab pane (FIN PANEL DE PROCESOS)-------------------------------------------------------->
 
@@ -1115,6 +1636,25 @@
         readFile(e.srcElement);
     }
 </script>
+
+        <script>
+    function agregarIdioma(id)
+    {
+        // agregamos idioma
+        var rowclone=$("#idiomaagregar").clone();
+        $(".formIdioma").prepend(rowclone);
+        
+    }
+
+    function quitarIdima(id)
+    {
+        // Eliminamos 
+        
+
+    }
+        </script>
+
+
 <script>
     function ponerReadOnly(id)
     {

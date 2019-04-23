@@ -25,10 +25,17 @@
 <body>
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
     <div  class="container">
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+	<a class="navbar-brand" href="#">SINU</a>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar" style="padding-top: 10px;">
     <ul class="nav navbar-nav ml-auto">
+		<li class="nav-item">
+		<a href="registrarse.html" style="color:white;">DELEGACION BUENOS AIRES |</a>
+      </li>
       <li class="nav-item">
-        <a href="registrarse.html">jfernandez@armada.mil.ar</a>
+        <a href="registrarse.html">| jfernandez@armada.mil.ar</a>
+      </li>
+	  <li class="nav-item">
+        <a class="btn btn-secondary" href="index.html">Cerrar Sesion</a>
       </li>
     </ul>
   </div> 
@@ -37,29 +44,31 @@
 </nav>
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
   <div  class="container">
-  <a class="navbar-brand" href="#">SINU</a>
+  
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="nav navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="interfacePrincipalDelegacion.html">Postulantes</a>
-      </li>
-            <li class="nav-item">
-        <a class="nav-link" href="interfaceAsignarDelegacion.html">Asignar Fechas</a>
-      </li>
-            <li class="nav-item">
-        <a class="nav-link" href="interfaceEntrevistaDelegacion.html">Entrevistas</a>
+        <a class="nav-link" href="interfacePrincipalDelegacion.html">Postulantes<span class="badge badge-light">12</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="index.html">Cerrar Sesion</a>
+        <a class="nav-link" href="interfaceFechaEntrevDelegacion.html">Fecha Entrevista<span class="badge badge-light">4</span></a>
       </li>
+            <li class="nav-item">
+        <a class="nav-link" href="interfaceEntrevistaDelegacion.html">Entrevistas<span class="badge badge-light">3</span></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="interfaceDocumentacionDelegacion.html">Documentación<span class="badge badge-light">2</span></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="interfacePresentacionDelegacion.html">Fecha|Lugar Presentación<span class="badge badge-light">1</span></a>
+      </li>   
     </ul>
   </div> 
   </div> 
 </nav>
-  </div>
 <div class="container-fluid tablaMobile" style="
     padding-left: 0px;
     padding-right: 0px;">
@@ -69,12 +78,12 @@
     padding-left: 0px;
     padding-right: 0px;">
   <br>
-  <h2>Postulantes</h2>
+  <h2>Entrevista</h2>
   <br>
   <div>
       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">CANCELAR FECHA</button>
-      <button type="button" class="btn btn-success"data-toggle="modal" data-target="#exampleModal">SUPERADA</button>
-      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal2">NO SUPERADA</button>
+      <button type="button" class="btn btn-success"data-toggle="modal" data-target="#exampleModal">SE POSTULA</button>
+      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">NO SE POSTULA</button>
   </div>
 <br>
 <!-- Modal -->
@@ -97,110 +106,59 @@
     </div>
   </div>
 </div>
-<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Atención</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-  <label class="form-check-label" for="inlineRadio1">Alineo personal</label>
-</div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-  <label class="form-check-label" for="inlineRadio2">Tatuajes en sectores no permitidos</label>
-</div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-  <label class="form-check-label" for="inlineRadio3">Religión</label>
-</div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-  <label class="form-check-label" for="inlineRadio3">Otros</label>
-</div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-        <button type="button" class="btn btn-primary">Aceptar</button>
-      </div>
-    </div>
-  </div>
-</div>
 
-  <table class="table">
+<table class="table text-center">
   <thead class="thead-dark">
     <tr>
       <th scope="col">#</th>
+	  <th scope="col"><input type="checkbox" value=""></th>
       <th scope="col">DNI</th>
       <th scope="col">APELLIDO</th>
       <th scope="col">NOMBRE</th>
       <th scope="col">INGRESO A</th>
       <th scope="col">ETAPA</th>
       <th scope="col">ESTADO</th>
+	  <th scope="col">VER</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th scope="row">1</th>
+	  <td><input type="checkbox" value=""></td>
       <td>34555666</td>
-      <td>ONETO</td>
+      <td>PEREZ</td>
       <td>FERNANDO</td>
       <td>S.M.V.</td>
-      <td>REGISTRADO</td>
+      <td>ENTREVISTA</td>
       <td>PENDIENTE</td>
+	  <td><a href="interfaceDetalleDelegacion.html">Detalle</a></td>
     </tr>
     <tr>
-      <th scope="row">1</th>
+      <th scope="row">2</th>
+	  <td><input type="checkbox" value=""></td>
       <td>34555666</td>
-      <td>ONETO</td>
+      <td>GUITIAN</td>
       <td>FERNANDO</td>
       <td>PROFESIONAL</td>
-      <td>REGISTRADO</td>
-      <td>VALIDADO</td>
+      <td>ENTREVISTA</td>
+      <td>PENDIENTE</td>
+	 <td><a href="interfaceDetalleDelegacion.html">Detalle</a></td>
     </tr>
     <tr>
-      <th scope="row">1</th>
+      <th scope="row">3</th>
+	  <td><input type="checkbox" value=""></td>
       <td>34555666</td>
-      <td>ONETO</td>
+      <td>GUERRERO</td>
       <td>FERNANDO</td>
       <td>ESCUELA DE FORMACION</td>
       <td>ENTREVISTA</td>
       <td>PENDIENTE</td>
-    </tr>
-        <tr>
-      <th scope="row">1</th>
-      <td>34555666</td>
-      <td>ONETO</td>
-      <td>FERNANDO</td>
-      <td>ESCUELA DE FORMACION</td>
-      <td>ENTREVISTA</td>
-      <td>SUPERADA</td>
-    </tr>
-        <tr>
-      <th scope="row">1</th>
-      <td>34555666</td>
-      <td>ONETO</td>
-      <td>FERNANDO</td>
-      <td>S.M.V.</td>
-      <td>ENTREVISTA</td>
-      <td>NO SUPERADA</td>
-    </tr>
-        <tr>
-      <th scope="row">1</th>
-      <td>34555666</td>
-      <td>ONETO</td>
-      <td>FERNANDO</td>
-      <td>PROFESIONAL</td>
-      <td>REGISTRADO</td>
-      <td>PENDIENTE</td>
+	  <td><a href="interfaceDetalleDelegacion.html">Detalle</a></td>
     </tr>
   </tbody>
 </table>
+  
+  
 </div>
   </div></div>
 

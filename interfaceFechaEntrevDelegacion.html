@@ -3,7 +3,7 @@
   <title>SINU-ARA</title>
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <script src="./Bootstrap 4 Website Example_files/jquery.min.js.descarga"></script>
   <script src="./Bootstrap 4 Website Example_files/popper.min.js.descarga"></script>
   <script src="./Bootstrap 4 Website Example_files/bootstrap.min.js.descarga"></script>
@@ -23,7 +23,6 @@
   </style>
 </head>
 <body>
-
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
     <div  class="container">
 	<a class="navbar-brand" href="#">SINU</a>
@@ -65,11 +64,12 @@
       </li>
 	  <li class="nav-item">
         <a class="nav-link" href="interfacePresentacionDelegacion.html">Fecha|Lugar Presentación<span class="badge badge-light">1</span></a>
-      </li>     
+      </li>    
     </ul>
   </div> 
   </div> 
 </nav>
+
 
 <div class="container-fluid tablaMobile" style="
     padding-left: 0px;
@@ -80,12 +80,24 @@
     padding-left: 0px;
     padding-right: 0px;">
   <br>
-  <h2>Postulantes</h2>
+  <h2>Asignar fecha entrevista</h2>
+  <br>
+  <div class="container" style="padding-left: 0px;">
+		<div class="row">
+			<div class="col-md-2">
+				<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Asignar fecha</button>
+			</div>
+			<div class="col-md-3">
+				<input type="date" id="date" class="form-control">
+            </div>
+		</div>
+  </div>
   <br>
   <table class="table text-center">
   <thead class="thead-dark">
     <tr>
       <th scope="col">#</th>
+	  <th scope="col"><input type="checkbox" value=""></th>
       <th scope="col">DNI</th>
       <th scope="col">APELLIDO</th>
       <th scope="col">NOMBRE</th>
@@ -98,29 +110,32 @@
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td>34555666</td>
-      <td>ROMANO</td>
-      <td>FERNANDO</td>
-      <td>PROFESIONAL</td>
-      <td>REGISTRADO</td>
-      <td>NO VALIDADO</td>
-	  <td><a href="interfaceDetalleDelegacion.html">Detalle</a></td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
+	  <td><input type="checkbox" value=""></td>
       <td>34555666</td>
       <td>SANJENIZ</td>
-      <td>FERNANDO</td>
+      <td>JULIO</td>
       <td>PROFESIONAL</td>
       <td>ENTREVISTA</td>
       <td>A ASIGNAR</td>
 	 <td><a href="interfaceDetalleDelegacion.html">Detalle</a></td>
     </tr>
     <tr>
-      <th scope="row">3</th>
+      <th scope="row">2</th>
+	  <td><input type="checkbox" value=""></td>
       <td>34555666</td>
       <td>PRIETO</td>
-      <td>FERNANDO</td>
+      <td>JORGE</td>
+      <td>ESCUELA DE FORMACION</td>
+      <td>ENTREVISTA</td>
+      <td>A ASIGNAR</td>
+	  <td><a href="interfaceDetalleDelegacion.html">Detalle</a></td>
+    </tr>
+        <tr>
+      <th scope="row">3</th>
+	  <td><input type="checkbox" value=""></td>
+      <td>34555666</td>
+      <td>FERNANDEZ</td>
+      <td>SERGIO</td>
       <td>ESCUELA DE FORMACION</td>
       <td>ENTREVISTA</td>
       <td>A ASIGNAR</td>
@@ -128,93 +143,14 @@
     </tr>
         <tr>
       <th scope="row">4</th>
-      <td>34555666</td>
-      <td>FERNANDEZ</td>
-      <td>FERNANDO</td>
-      <td>ESCUELA DE FORMACION</td>
-      <td>ENTREVISTA</td>
-      <td>A ASIGNAR</td>
-	  <td><a href="interfaceDetalleDelegacion.html">Detalle</a></td>
-    </tr>
-        <tr>
-      <th scope="row">5</th>
+	  <td><input type="checkbox" value=""></td>
       <td>34555666</td>
       <td>MANSILLA</td>
-      <td>FERNANDO</td>
+      <td>LUCAS</td>
       <td>S.M.V.</td>
       <td>ENTREVISTA</td>
       <td>A ASIGNAR</td>
 	  <td><a href="interfaceDetalleDelegacion.html" >Detalle</a></td>
-    </tr>
-        <tr>
-      <th scope="row">6</th>
-      <td>34555666</td>
-      <td>PEREZ</td>
-      <td>FERNANDO</td>
-      <td>PROFESIONAL</td>
-      <td>ENTREVISTA</td>
-      <td>PENDIENTE</td>
-	  <td><a href="interfaceDetalleDelegacion.html">Detalle</a></td>
-    </tr>
-	<tr>
-      <th scope="row">7</th>
-      <td>34555666</td>
-      <td>GUITIAN</td>
-      <td>FERNANDO</td>
-      <td>S.M.V.</td>
-      <td>ENTREVISTA</td>
-      <td>PENDIENTE</td>
-	  <td><a href="interfaceDetalleDelegacion.html" >Detalle</a></td>
-    </tr>
-        <tr>
-      <th scope="row">8</th>
-      <td>34555666</td>
-      <td>GUERRERO</td>
-      <td>FERNANDO</td>
-      <td>PROFESIONAL</td>
-      <td>ENTREVISTA</td>
-      <td>PENDIENTE</td>
-	  <td><a href="interfaceDetalleDelegacion.html">Detalle</a></td>
-    </tr>
-	<tr>
-      <th scope="row">9</th>
-      <td>34555666</td>
-      <td>VILLATA</td>
-      <td>FERNANDO</td>
-      <td>S.M.V.</td>
-      <td>DOCUMENTACION</td>
-      <td>PENDIENTE</td>
-	  <td><a href="interfaceDetalleDelegacion.html">Detalle</a></td>
-    </tr>
-    <tr>
-      <th scope="row">10</th>
-      <td>34555666</td>
-      <td>FLORES</td>
-      <td>FERNANDO</td>
-      <td>PROFESIONAL</td>
-      <td>DOCUMENTACION</td>
-      <td>PENDIENTE</td>
-	 <td><a href="interfaceDetalleDelegacion.html">Detalle</a></td>
-    </tr>
-    <tr>
-      <th scope="row">11</th>
-      <td>34555666</td>
-      <td>HERNANDEZ</td>
-      <td>FERNANDO</td>
-      <td>ESCUELA DE FORMACION</td>
-      <td>PRESENTACION</td>
-      <td>A ASIGNAR</td>
-	  <td><a href="interfaceDetalleDelegacion.html">Detalle</a></td>
-    </tr>
-	<tr>
-      <th scope="row">12</th>
-      <td>34555666</td>
-      <td>SOLIS</td>
-      <td>FERNANDO</td>
-      <td>ESCUELA DE FORMACION</td>
-      <td>PRESENTACION</td>
-      <td>ASIGNADA</td>
-	  <td><a href="interfaceDetalleDelegacion.html">Detalle</a></td>
     </tr>
   </tbody>
 </table>
@@ -228,6 +164,6 @@
   <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/theme.js"></script>
-
+	
 </body>
 </html>
