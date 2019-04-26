@@ -79,7 +79,26 @@
 	  <div class="collapse navbar-collapse" id="collapsibleNavbar">
 	    <ul class="nav navbar-nav ml-auto">
 	      <li class="nav-item">
-        <a class="btn btn-secondary" href="index.html">Cerrar Sesion</a>
+        <a class="btn btn-secondary" href="index.html" data-toggle="modal" data-target="#exampleModal">Cerrar Sesion</a>
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Atención</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">×</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								Desea cerrar sesión?
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+								<a class="btn btn-primary" href="index.html">Aceptar</a>
+							</div>
+						</div>
+					</div>
+				</div>
       </li>
 	    </ul>
 	  </div> 
@@ -213,9 +232,47 @@
 		    	<h3 class="text-center">Información complementaria</h3>
 		    	<br>
                 <div class="d-flex flex-row-reverse">
-                    <button type="button" class="btn btn-primary">Enviar Documentacion</button>
-                    <button type="button" class="btn btn-info">Guardar</button>
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal1">Guardar y Enviar Documentacion</button>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Guardado Parcial</button>
                 </div>
+				<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Atención</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">×</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								La información cargada será enviada a la Delegación Naval seleccionada. Está seguro de enviar?
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+								<button class="btn btn-primary" data-dismiss="modal">Enviar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Atención</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">×</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								Desea guardar la información cargada de forma parcial?
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">NO</button>
+								<button class="btn btn-primary" data-dismiss="modal">SI</button>
+							</div>
+						</div>
+					</div>
+				</div>
                 <br>
 		    	<!-- Nav pills INICIO SUBMENU DOCUMENTACION-->
 		    		<div class="row">
@@ -498,6 +555,8 @@
 							</div>
 
                             <div class="tab-pane container fade" id="antecedentespenales">
+								<br>
+								<br>
                             	<h4>Autorizacion antecedentes Penales - TAD</h4>
                                 <br>
                                 <div class="row">
@@ -520,7 +579,7 @@
 												      <div class="modal-body">
 												        <form>
 															
-			                                                <img class="img " style="width: 100%;" src="TAD4.png">
+			                                                <img class="img " style="width: 100%;" src="TAD4.PNG">
 			                                                
 														</form>
 												      </div>
@@ -531,7 +590,7 @@
 												    </div>
 												  </div>
 											</div>
-											<img class="img img-thumbnail " src="TAD1.png">
+											<img class="img img-thumbnail " src="TAD1.PNG">
                                     </div>
                                 </div>
                                 <br>
@@ -540,7 +599,7 @@
                                       
                                     </div>
                                     <div class="col-md-4">
-                                        <img class="img-responsive" style="width: 100%; height:100%;" src="TAD2.png">
+                                        <img class="img-responsive" style="width: 100%; height:100%;" src="TAD2.PNG">
                                     </div>
                                     <div class="col-md-4">
                                     </div>
@@ -548,6 +607,7 @@
                             </div>
 
 							<div class="tab-pane container fade" id="domicilio">
+								<br>
 								<br>
 								<div class="row">
 									<h4>Domicilio real DNI</h4>
@@ -677,11 +737,8 @@
 					 			<br>
 								<div class="row">
 									<h4>Máximo nivel alcanzado</h4>
-					 	    		<br>
 								</div>
-
-								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Agregar Estudio</button>
-								<br>
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">+ Agregar</button>	
 								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 									  <div class="modal-dialog" role="document">
 									    <div class="modal-content">
@@ -690,7 +747,7 @@
 									        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 									          <span aria-hidden="true">&times;</span>
 									        </button>
-									      </div>
+									      </div>									
 									      <div class="modal-body">
 									        <form>
 												<select class="custom-select" id="tipo">
@@ -1052,7 +1109,7 @@
 								</div>
 
 								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalActividades" data-whatever="@getbootstrap">Agregar actividad</button>
-								<br>
+								
 								<div class="modal fade" id="exampleModalActividades" tabindex="-1" role="dialog" aria-labelledby="exampleModalActividades" aria-hidden="true">
 									  <div class="modal-dialog" role="document">
 									    <div class="modal-content">
@@ -1063,6 +1120,7 @@
 									        </button>
 									      </div>
 									      <div class="modal-body">
+										  <br>
 									        <form>
 												<select class="custom-select" id="tipo">
                                                   <option selected>fuerza</option>
@@ -1250,6 +1308,7 @@
 
                             <div class="tab-pane container fade" id="ocupacion">
                                 <br>
+								<br>
                                 <div class="row">
                                     <h4>Situacion Ocupacional</h4>
                                     <br>
@@ -1296,6 +1355,7 @@
                             
                             <div class="tab-pane container fade" id="talla">
                                 <br>
+								<br>
                                 <div class="row">
                                     <h4>Talla</h4>
                                     <br>
@@ -1393,10 +1453,8 @@
 									<h4>FAMILIARES | CONVIVIENTES</h4>
 					 	    		<br>
 								</div>
-                                <br/>
 								<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap" >Agregar familiar</button>-->
 								<a class="btn btn-primary txt-lg" href="interfacePostulanteAgregarFamiliar.html" target="_blank" >+ Agregar</a>
-                                <br />
 								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 									  <div class="modal-dialog" role="document">
 									    <div class="modal-content">
@@ -1593,7 +1651,7 @@
                         <hr>
                     </div>
 
-                    <a href="#" class="btn btn-info">Decargar Formulario</a>
+                    <a class="btn btn-info" href="FORMULARIO FINAL SINU.pdf" download target="_blank">Decargar Formulario</a>
 
                 </div>
                 <div class="col-md-3">
