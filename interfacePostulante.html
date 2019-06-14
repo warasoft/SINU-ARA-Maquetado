@@ -1132,8 +1132,7 @@
 									              <option value="gendarmeria">GENDARMERIA NACIONAL ARGENTINA</option>
 									              <option value="prefectura">PREFECTUR NAVAL ARGENTINA</option>
 									              <option value="policia" id="policia">POLICIA</option>
-                                                  <option value="institutoMilitar">INSTITUTO MILITAR</option>
-									            </select>
+                                                </select>
 									            <br>
 									            <div id="tipopolicia" style="visibility: hidden;">
 									            <select class="custom-select" >
@@ -1163,14 +1162,14 @@
 												           name="contact" value="phone" disabled="">
 												    <label for="contactChoice2">NO</label>
                                                 </div>
-                                                <label for="modal-title" class="modal-title">Fecha Ingreso</label>
+                                                <label for="modal-title" class="modal-title">Año Ingreso</label>
                                                 <div class='col-sm-8'>
-                                                    <input type='date' class="form-control" />
+                                                    <input type='text' class="form-control" />
                                                 </div>
                                                 <br>
-                                                <label for="modal-title" class="modal-title">Fecha Baja</label>
+                                                <label for="modal-title" class="modal-title">Año Baja</label>
                                                 <div class='col-sm-8'>
-                                                    <input type='date' class="form-control" />
+                                                    <input type='text' class="form-control" />
                                                 </div>       
                                                 <br>
                                                 <input class="form-control" type="text" name="" placeholder="Motivo de no Ingreso"> 
@@ -1182,7 +1181,15 @@
                                                 </select>
                                                 <br>
                                                 <br>
-                                                <input class="form-control" type="text" name="" placeholder="Motivo baja">
+                                                <select class="custom-select" id="motivobaja">
+                                                    <option selected>Motivo de baja</option>
+                                                    <option value="personal">PERSONAL</option>
+                                                    <option value="medica">MÉDICA</option>
+                                                    <option value="intelectual">INTELECTUAL</option>
+                                                    <option value="vocacional">VOCACIONAL</option>
+                                                    <option value="otros">OTROS</option>
+                                                </select>
+                                                <br>
                                                 <br>
 									            <input class="form-control" type="text" name="" placeholder="Máximo grado alcanzado">          	
 									            <br>
@@ -1309,29 +1316,58 @@
                                         <form>
                                           
                                                 <div class="form-group row">
-                                                    <label for="staticEmail" class="col-sm-6 col-form-label text-center">Situacion Ocupacional</label>
-                                                    <select class="custom-select col-md-6" id="situacioocupacional">
+                                                    <label for="staticEmail" class="col-sm-6 col-form-label">Situacion Ocupacional</label>
+                                                    <div class="col-sm-6">
+                                                    <select class="custom-select" id="situacioocupacional" onchange="quitardivOcupacion(this.value)">
                                                         <option selected>Selecione</option>
                                                         <option value="ocupado">OCUPADO</option>
-                                                        <option value="desocupado">DESOCUPADO</option>
-                                                        <option value="inactivo">INACTIVO</option>
+                                                        <option value="desocupado">DESOCUPADO (No trabaja, pero busca trabajo)</option>
+                                                        <option value="inactivo">INACTIVO (No trabaja ni busca trabajo)</option>
                                                     </select>
+                                                    </div>
                                                 </div>
                                                 
                                                 <div class="form-group row">
-                                                    <label for="staticEmail" class="col-sm-6 col-form-label text-center">Descripcion</label>
+                                                    <label for="staticEmail" class="col-sm-6 col-form-label">Descripcion</label>
                                                     <div class="col-sm-6">
                                                         <input class="form-control" type="text" name="descripcion" id="descripcion" placeholder="ej. jubilado | estudiante | pensionado" value="">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
-                                                    <label for="staticEmail" class="col-sm-6 col-form-label text-center">Oficio</label>
+                                                    <label for="staticEmail" class="col-sm-6 col-form-label">Oficio</label>
                                                     <div class="col-sm-6">
                                                         <input class="form-control" type="text" name="oficio" id="oficio" placeholder="ej. plomero | programador | médico" value="">
                                                     </div>
                                                 </div>
+                                                <div id="yopcion" style="visibility: hidden;">
+                                            <div class="form-group row">
+                                                <label for="staticEmail" class="col-sm-6 col-form-label">Domicilio laboral</label>
+                                                <div class='col-sm-6'>
+                                                    <input class="form-control" type="text" id="domicilioLab">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group row">
+                                                <label for="staticEmail" class="col-sm-6 col-form-label">Años trabajados</label>
+                                                <div class="col-sm-6">
+                                                    <input class="form-control" type="text" id="anios">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                    <label for="staticEmail" class="col-sm-6 col-form-label">Experiencia laboral en...</label>
+                                                    <div class="col-sm-6">
+                                                    <select class="custom-select" id="experiencialab">
+                                                        <option selected>Selecione</option>
+                                                        <option value="ocupado">Oficinista</option>
+                                                        <option value="desocupado">Electricidad</option>
+                                                        <option value="inactivo">Electrónica</option>
+                                                        <option value="inactivo">Informática</option>
+                                                    </select>
+                                                    </div>
+                                                </div>
+                                            </div>
 
-</form>
+									</form>
                                     </div>
                                     
 
@@ -1376,6 +1412,13 @@
                                                 <label for="staticEmail" class="col-sm-4 col-form-label text-center">Peso</label>
                                                 <div class="col-sm-8">
                                                     <input class="form-control" type="text" name="peso" id="peso" placeholder="kg" value="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                            	
+                                                <label for="staticEmail" class="col-sm-4 col-form-label text-center">I.M.C. (Índice Masa Corporal)</label>
+                                                <div class="col-sm-8">
+                                                    <input class="form-control" type="text" name="imc" id="imc" placeholder="" value="">
                                                 </div>
                                             </div>
                                             <div class="form-group row">
@@ -1436,7 +1479,7 @@
 					 	    	<br>
 					 			<br>
 								<div class="row">
-									<h4>FAMILIARES | CONVIVIENTES</h4>
+									<h4>FAMILIARES Y CONVIVIENTES</h4>
 					 	    		<br>
 								</div>
 								<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap" >Agregar familiar</button>-->
@@ -1621,14 +1664,21 @@
                 <div class="col-md-3">
                 </div>
                 <div class="col-md-6">
-                    <h3 class="text-center">Fecha | Lugar presentación</h3>
+                    <h3 class="text-center">Fecha y Lugar de presentación</h3>
                     <br>
                     <div class="alert alert-success" role="alert">
                     	  <p>Lugar: <a href="#" class="alert-link">ESCUELA NAVAL MILITAR.</a></p>
 						  <p>Dirección: <a href="#" class="alert-link glyphicon glyphicon-map-marker">Río Santiago S/N, Ensenada.</a></p>
 						  <p>Teléfono: <a href="#" class="alert-link">(011) 43814022.</a></p>
 						  <p>Fecha y hora: <a href="#" class="alert-link">12/02/2020 | 08:00.</a></p>
-                         <p class="mb-0">Vestimenta, elegante sport. Presentarse con la documentación solicitada en el instructivo de inscripción y Numero de Preinscripcion.</p>
+                    </div>
+
+                    <div class="alert alert-info text-center" role="alert">
+                        <h4 class="alert-heading">Aspectos a tener en cuenta</h4>
+                        <hr>
+                        <p class="mb-0">Presentar <span class="font-weight-bold">CERTIFICADO DE ANTECEDENTES PENALES ACTUALIZADO</span>.</p>
+                    	<p>Vestimenta, elegante sport. Presentarse con la documentación solicitada en el instructivo de inscripción y Numero de Preinscripcion.</p>
+                        <hr>
                     </div>
 
                     <div class="alert alert-info text-center" role="alert">
@@ -1741,6 +1791,19 @@ else{
 </script>
 
 <script type="text/javascript">
+	function quitardivOcupacion(sel){
+	if(sel=="ocupado")
+{
+document.getElementById('yopcion').style.visibility = 'visible';
+}
+else{
+	document.getElementById('yopcion').style.visibility = 'hidden';
+}
+}
+
+</script>
+
+<script type="text/javascript">
 	function agregarread(sel){
 	if(sel=="option2")
 {
@@ -1774,6 +1837,63 @@ else{
 		document.getElementById('ingreso1').disabled=false;
 		document.getElementById('ingreso2').disabled=false;
 	}
+	}
+</script>
+<script type="">
+	function calc_imc(id){
+		var altura=document.getElementById("altura").value;
+		altura=altura.toString().replace(',','.');
+		var alturaMetro=altura/100;
+		var peso=document.getElementById("peso").value;
+		var alturacuadrado= alturaMetro*alturaMetro;
+		var imc=peso/alturacuadrado;
+		document.getElementById("imc").value=Math.round(imc*100)/100;
+
+		if (altura==""{
+			document.getElementById("errorIMC").innerHTML="Introduce tu altura.";
+		}
+		else if (altura<0){
+			document.getElementById("errorIMC").innerHTML="La altura debe ser positiva.";
+		}
+		else if(altura<20){
+			document.getElementById("errorIMC").innerHTML="Ha introducido la altura en mts. introduzca en cm.";
+		}
+		else{
+			document.getElementById("errorIMC").innerHTML="";
+			if(peso==""){
+				document.getElementById("errorIMC").innerHTML="Introduce tu peso.";
+			}
+			else if (peso<0){
+				document.getElementById("errorIMC").innerHTML="El peso debe ser positiva.";
+			}
+			else{
+				document.getElementById("errorIMC").innerHTML="";
+				if(imc<16){
+					document.getElementById("IMCDMEDIDADO").value="DELGADEZ SEVERA";
+				}
+				else if(imc<17){
+					document.getElementById("IMCDMEDIDADO").value="DELGADEZ MODERADA";
+				}
+				else if(imc<18.5){
+					document.getElementById("IMCDMEDIDADO").value="DELGADEZ ACEPTABLE";
+				}
+				else if(imc<25){
+					document.getElementById("IMCDMEDIDADO").value="PESO NORMAL";
+				}
+				else if(imc<30){
+					document.getElementById("IMCDMEDIDADO").value="SOBREPESO";
+				}
+				else if(imc<35){
+					document.getElementById("IMCDMEDIDADO").value="OBESO TIPO I";
+				}
+				else if(imc<40){
+					document.getElementById("IMCDMEDIDADO").value="OBESO TIPO II";
+				}
+				else if(imc>=40){
+					document.getElementById("IMCDMEDIDADO").value="OBESO TIPO III";
+				}
+			}
+		}
 	}
 </script>
 </body>
